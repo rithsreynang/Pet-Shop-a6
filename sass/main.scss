@@ -1,9 +1,9 @@
 *{
     margin: 0;
     padding: 0;
+    line-height: 1.5;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-@import"nav";
-@import"header";
-@import"content-main";
-@import"footer";
