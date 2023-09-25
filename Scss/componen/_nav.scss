@@ -2,9 +2,8 @@ nav {
     display: grid;
     height: 10vh;
     grid-template-columns: 1fr 1fr 1fr;
-    background-color: rgb(17, 156, 156);
+   
     .nav-right {
-        background-color: aliceblue;
         img {
             margin-top: -35px;
             margin-left: 70px;
@@ -14,6 +13,7 @@ nav {
         font-size: 25px;
         margin-top: 25px;
         display: grid;
+        justify-content: center;
         grid-template-columns: repeat(3, 1fr);
         
     }
@@ -25,7 +25,10 @@ nav {
         margin-top: 25px; 
 
     }
-
+    .material-icons{
+        font-size: 40px;
+    }
+  
 }
 
 
