@@ -32,7 +32,16 @@ nav .nav-left {
 header {
   display: flex;
   height: 40vh;
+  width: 100vh;
   background-color: azure;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.silde {
+  display: flex;
+  position: absolute;
+  transform: translate(-50%);
 }
 
 main {
