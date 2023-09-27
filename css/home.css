@@ -13,7 +13,7 @@ body {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
-.for_dog,
+.shopping,
 .newarrival,
 .shopebypets,
 .newproducdselling {
@@ -21,7 +21,7 @@ body {
   margin-top: 30px;
   margin-bottom: 50px;
 }
-.for_dog h2,
+.shopping h2,
 .newarrival h2,
 .shopebypets h2,
 .newproducdselling h2 {
@@ -29,8 +29,8 @@ body {
   font-size: 25px;
   margin: 50px;
 }
-.for_dog .group_cards,
-.for_dog .group_card,
+.shopping .group_cards,
+.shopping .group_card,
 .newarrival .group_cards,
 .newarrival .group_card,
 .shopebypets .group_cards,
@@ -43,51 +43,40 @@ body {
   overflow-x: scroll;
   overflow-y: hidden;
 }
-.for_dog .group_card::-webkit-scrollbar,
+.shopping .group_card::-webkit-scrollbar,
 .newarrival .group_card::-webkit-scrollbar,
 .shopebypets .group_card::-webkit-scrollbar,
 .newproducdselling .group_card::-webkit-scrollbar {
   display: none;
 }
-.for_dog .card,
+.shopping .card,
 .newarrival .card,
 .shopebypets .card,
 .newproducdselling .card {
-  height: 65vh;
   border: 1px solid rgb(229, 223, 223);
   border-radius: 15px;
   text-align: start;
-  font-size: 15px;
+  font-size: 18px;
   height: auto;
   padding-bottom: 30px;
 }
-.for_dog .card img,
+.shopping .card img,
 .newarrival .card img,
 .shopebypets .card img,
 .newproducdselling .card img {
   border-radius: 15px 15px 0px 0px;
 }
-.for_dog .card p,
-.newarrival .card p,
-.shopebypets .card p,
-.newproducdselling .card p {
-  font-size: 18px;
-  font-weight: bold;
-}
-.for_dog .card .price,
+.shopping .card .price,
 .newarrival .card .price,
 .shopebypets .card .price,
 .newproducdselling .card .price {
   display: flex;
   padding-left: 15px;
+  margin-top: -10px;
+  gap: 20px;
+  font-size: 20px;
 }
-.for_dog .card .price p,
-.newarrival .card .price p,
-.shopebypets .card .price p,
-.newproducdselling .card .price p {
-  padding-top: 5px;
-}
-.for_dog .card button,
+.shopping .card button,
 .newarrival .card button,
 .shopebypets .card button,
 .newproducdselling .card button {
@@ -97,34 +86,38 @@ body {
   display: flex;
   gap: 10px;
   border-radius: 10px;
-  padding: 8px 25px 5px 25px;
+  padding: 0px 25px;
   font-size: 13px;
   color: white;
-  margin: 5px 35px;
+  margin: -5px 35px;
 }
-.for_dog .card button b,
-.newarrival .card button b,
-.shopebypets .card button b,
-.newproducdselling .card button b {
-  font-size: 10px;
+.shopping .card button p,
+.newarrival .card button p,
+.shopebypets .card button p,
+.newproducdselling .card button p {
+  font-size: 13px;
 }
-.for_dog .card h3,
+.shopping .card button i,
+.newarrival .card button i,
+.shopebypets .card button i,
+.newproducdselling .card button i {
+  padding-top: 7px;
+}
+.shopping .card h3,
 .newarrival .card h3,
 .shopebypets .card h3,
 .newproducdselling .card h3 {
-  margin: 3px;
   margin-left: 15px;
 }
-.for_dog .card .group_icons,
+.shopping .card .group_icons,
 .newarrival .card .group_icons,
 .shopebypets .card .group_icons,
 .newproducdselling .card .group_icons {
   width: 100%;
-  margin-top: -15px;
+  margin-top: -10px;
   padding-left: 12px;
-  padding-top: 15px;
   display: flex;
-  font-size: small;
+  font-size: 10px;
   color: orange;
 }
 
@@ -319,7 +312,7 @@ hr {
   font-size: 33px;
 }
 
-.for_dog,
+.shopping,
 .newarrival,
 .shopebypets,
 .newproducdselling {
@@ -327,7 +320,7 @@ hr {
   margin-top: 30px;
   margin-bottom: 50px;
 }
-.for_dog h2,
+.shopping h2,
 .newarrival h2,
 .shopebypets h2,
 .newproducdselling h2 {
@@ -335,8 +328,8 @@ hr {
   font-size: 25px;
   margin: 50px;
 }
-.for_dog .group_cards,
-.for_dog .group_card,
+.shopping .group_cards,
+.shopping .group_card,
 .newarrival .group_cards,
 .newarrival .group_card,
 .shopebypets .group_cards,
@@ -349,51 +342,40 @@ hr {
   overflow-x: scroll;
   overflow-y: hidden;
 }
-.for_dog .group_card::-webkit-scrollbar,
+.shopping .group_card::-webkit-scrollbar,
 .newarrival .group_card::-webkit-scrollbar,
 .shopebypets .group_card::-webkit-scrollbar,
 .newproducdselling .group_card::-webkit-scrollbar {
   display: none;
 }
-.for_dog .card,
+.shopping .card,
 .newarrival .card,
 .shopebypets .card,
 .newproducdselling .card {
-  height: 65vh;
   border: 1px solid rgb(229, 223, 223);
   border-radius: 15px;
   text-align: start;
-  font-size: 15px;
+  font-size: 18px;
   height: auto;
   padding-bottom: 30px;
 }
-.for_dog .card img,
+.shopping .card img,
 .newarrival .card img,
 .shopebypets .card img,
 .newproducdselling .card img {
   border-radius: 15px 15px 0px 0px;
 }
-.for_dog .card p,
-.newarrival .card p,
-.shopebypets .card p,
-.newproducdselling .card p {
-  font-size: 18px;
-  font-weight: bold;
-}
-.for_dog .card .price,
+.shopping .card .price,
 .newarrival .card .price,
 .shopebypets .card .price,
 .newproducdselling .card .price {
   display: flex;
   padding-left: 15px;
+  margin-top: -10px;
+  gap: 20px;
+  font-size: 20px;
 }
-.for_dog .card .price p,
-.newarrival .card .price p,
-.shopebypets .card .price p,
-.newproducdselling .card .price p {
-  padding-top: 5px;
-}
-.for_dog .card button,
+.shopping .card button,
 .newarrival .card button,
 .shopebypets .card button,
 .newproducdselling .card button {
@@ -403,33 +385,37 @@ hr {
   display: flex;
   gap: 10px;
   border-radius: 10px;
-  padding: 8px 25px 5px 25px;
+  padding: 0px 25px;
   font-size: 13px;
   color: white;
-  margin: 5px 35px;
+  margin: -5px 35px;
 }
-.for_dog .card button b,
-.newarrival .card button b,
-.shopebypets .card button b,
-.newproducdselling .card button b {
-  font-size: 10px;
+.shopping .card button p,
+.newarrival .card button p,
+.shopebypets .card button p,
+.newproducdselling .card button p {
+  font-size: 13px;
 }
-.for_dog .card h3,
+.shopping .card button i,
+.newarrival .card button i,
+.shopebypets .card button i,
+.newproducdselling .card button i {
+  padding-top: 7px;
+}
+.shopping .card h3,
 .newarrival .card h3,
 .shopebypets .card h3,
 .newproducdselling .card h3 {
-  margin: 3px;
   margin-left: 15px;
 }
-.for_dog .card .group_icons,
+.shopping .card .group_icons,
 .newarrival .card .group_icons,
 .shopebypets .card .group_icons,
 .newproducdselling .card .group_icons {
   width: 100%;
-  margin-top: -15px;
+  margin-top: -10px;
   padding-left: 12px;
-  padding-top: 15px;
   display: flex;
-  font-size: small;
+  font-size: 10px;
   color: orange;
 }/*# sourceMappingURL=home.css.map */
