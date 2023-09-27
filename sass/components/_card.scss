@@ -23,16 +23,28 @@
         img {
             border-radius: 15px 15px 0px 0px;
         }
+        .price{
+            display: flex;
+            padding-left: 15px;
+            p{
+                padding-top: 5px;
+            }
+        }
 
         button {
             text-align: center;
             background: rgb(21, 160, 189);
             border: 1px solid #15A0BD;
+            display: flex;
+            gap: 10px;
             border-radius: 10px;
             padding: 8px 25px 5px 25px;
             font-size: 13px;
             color: white;
-            margin: 5px 46px;
+            margin: 5px 35px;
+            p{
+                padding-top: 3px;
+            }
         }
 
         h3 {
