@@ -33,4 +33,54 @@ nav .nav-left {
 }
 nav .material-icons {
   font-size: 30px;
+}
+
+header {
+  height: 100vh;
+  background: url(../images/about/header.jpg);
+  background-size: 100% 100%;
+}
+header .bg {
+  background: rgba(0, 0, 0, 0.195);
+  height: 69vh;
+  width: 50%;
+  text-align: justify;
+  color: white;
+  padding: 100px 100px;
+  font-size: 25px;
+}
+header .bg h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+main {
+  padding-top: 80px;
+}
+main .mission {
+  background: rgb(179, 209, 245);
+  padding: 30px 150px 30px 150px;
+  border: 1px solid black;
+  text-align: justify;
+  font-size: 25px;
+  border-radius: 30px;
+}
+main .mission h2 {
+  margin-bottom: 30px;
+  text-align: center;
+}
+main h2 {
+  text-align: center;
+  margin-top: 100px;
+  font-size: 30px;
+}
+main .value {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 50px;
+  text-align: center;
+}
+main .value .card-icon img {
+  height: 15vh;
+  width: 70%;
 }/*# sourceMappingURL=about-us.css.map */
