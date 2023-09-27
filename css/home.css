@@ -110,8 +110,6 @@ nav .material-icons {
   font-size: 30px;
 }
 
-<<<<<<< HEAD
-=======
 @keyframes slideshow {
   0% {
     width: 100%;
@@ -198,7 +196,6 @@ nav .material-icons {
   background-image: url(../../images/home/cover-img3.jpg);
 }
 
->>>>>>> bd2b5dbd57ef79ce2314d8a80ebe4e28ecb049a2
 main {
   display: flex;
   flex-direction: column;
@@ -207,10 +204,6 @@ main {
 
 footer {
   display: flex;
-<<<<<<< HEAD
-  height: 30vh;
-  background-color: rosybrown;
-=======
   flex-direction: column;
   background-color: rgba(82, 134, 238, 0.31);
   margin-top: 50px;
@@ -329,5 +322,4 @@ hr {
   display: flex;
   font-size: small;
   color: orange;
->>>>>>> bd2b5dbd57ef79ce2314d8a80ebe4e28ecb049a2
 }/*# sourceMappingURL=home.css.map */
