@@ -1,1 +1,0 @@
-nav{display:grid;height:12vh;grid-template-columns:1fr 1fr 1fr}nav .nav-right img{margin-top:-35px;margin-left:70px}nav .nav-center{font-size:25px;margin-top:25px;display:grid;justify-content:center;grid-template-columns:repeat(3, 1fr)}nav .nav-left{display:flex;justify-content:end;gap:40px;margin-right:60px;margin-top:25px}nav .material-icons{font-size:40px}
