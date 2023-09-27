@@ -1,7 +1,18 @@
-.for_dog {
+.for_dog,
+.newarrival,
+.shopebypets,
+.newproducdselling {
     text-align: center;
     margin-top: 30px;
+    margin-bottom: 10px;
 
+    h2 {
+        text-align: center;
+        font-size: 25px;
+        margin: 50px;
+    }
+
+    .group_cards,
     .group_card {
         display: flex;
         gap: 20px;
@@ -9,6 +20,7 @@
         overflow-x: scroll;
         overflow-y: hidden;
     }
+
     .group_card::-webkit-scrollbar {
         display: none;
     }
@@ -19,14 +31,25 @@
         border-radius: 15px;
         text-align: start;
         font-size: 15px;
+        height: auto;
+        padding-bottom: 30px;
 
         img {
             border-radius: 15px 15px 0px 0px;
+            margin-bottom: 20px;
         }
-        .price{
+
+        p {
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .price {
             display: flex;
             padding-left: 15px;
-            p{
+
+            p {
                 padding-top: 5px;
             }
         }
@@ -41,9 +64,11 @@
             padding: 8px 25px 5px 25px;
             font-size: 13px;
             color: white;
-            margin: 5px 35px;
-            p{
-                padding-top: 3px;
+            margin: 10px 25px;
+            width: 80%;
+
+            b {
+                font-size: 13px;
             }
         }
 
@@ -60,6 +85,20 @@
             display: flex;
             font-size: small;
             color: orange;
+
+        }
+
+        .listnumber-card {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            margin: 0px 15px;
+
+            span {
+                font-weight: bold;
+                font-size: 20px;
+                color: rgb(199, 89, 11);
+            }
         }
     }
 
