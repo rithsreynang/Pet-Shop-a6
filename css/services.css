@@ -46,6 +46,7 @@ header {
   text-align: center;
   font-size: 30px;
   padding-top: 35px;
+<<<<<<< HEAD
 }
 
 main {
@@ -357,4 +358,6 @@ main .footer-content-left .right-footer {
 }
 main .footer-content-left .right-footer .material-icons {
   font-size: 33px;
+=======
+>>>>>>> 1df0f13c450352207a1ec0d5fed359b4ea8587a2
 }/*# sourceMappingURL=services.css.map */
