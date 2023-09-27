@@ -85,12 +85,8 @@ nav .nav-right img {
   margin-left: 70px;
 }
 nav .nav-center {
-<<<<<<< HEAD
-  font-size: 28px;
   margin-top: 25px;
-=======
   font-size: 25px;
->>>>>>> 0f93e5dd43d16bb1200df7c13fbd70ddafce6597
   display: grid;
   justify-content: center;
   grid-template-columns: repeat(3, 1fr);
@@ -203,7 +199,6 @@ main {
 
 footer {
   display: flex;
-<<<<<<< HEAD
   flex-direction: column;
   background-color: rgba(82, 134, 238, 0.31);
   margin-top: 50px;
@@ -262,9 +257,4 @@ hr {
 }
 .footer-content-left .right-footer .material-icons {
   font-size: 33px;
-}
-=======
-  height: 30vh;
-  background-color: rosybrown;
 }/*# sourceMappingURL=main.css.map */
->>>>>>> 0f93e5dd43d16bb1200df7c13fbd70ddafce6597

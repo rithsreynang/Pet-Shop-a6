@@ -90,12 +90,8 @@ nav .nav-right img {
   margin-left: 70px;
 }
 nav .nav-center {
-<<<<<<< HEAD
-  font-size: 28px;
   margin-top: 25px;
-=======
   font-size: 25px;
->>>>>>> 0f93e5dd43d16bb1200df7c13fbd70ddafce6597
   display: grid;
   justify-content: center;
   grid-template-columns: repeat(3, 1fr);
@@ -208,7 +204,6 @@ main {
 
 footer {
   display: flex;
-<<<<<<< HEAD
   flex-direction: column;
   background-color: rgba(82, 134, 238, 0.31);
   margin-top: 50px;
@@ -269,133 +264,62 @@ hr {
   font-size: 33px;
 }
 
-.new_arrival,
-.shopbypets,
-.newproducdselling {
+.for_dog {
+  text-align: center;
   margin-top: 30px;
 }
-.new_arrival h3,
-.shopbypets h3,
-.newproducdselling h3 {
-  text-align: center;
-  margin-bottom: 60px;
-  font-size: 28px;
-}
-.new_arrival .group_cards,
-.new_arrival .group_card,
-.shopbypets .group_cards,
-.shopbypets .group_card,
-.newproducdselling .group_cards,
-.newproducdselling .group_card {
+.for_dog .group_card {
   display: flex;
-  justify-content: space-evenly;
-  gap: 10px;
-  margin: 20px;
+  gap: 20px;
+  margin: 10px;
   overflow-x: scroll;
+  overflow-y: hidden;
 }
-.new_arrival .group_cards .card,
-.new_arrival .group_card .card,
-.shopbypets .group_cards .card,
-.shopbypets .group_card .card,
-.newproducdselling .group_cards .card,
-.newproducdselling .group_card .card {
-  border: 1px solid #000;
-  padding-bottom: 15px;
+.for_dog .group_card::-webkit-scrollbar {
+  display: none;
+}
+.for_dog .card {
+  height: 65vh;
+  border: 1px solid rgb(229, 223, 223);
   border-radius: 15px;
+  text-align: start;
+  font-size: 15px;
 }
-.new_arrival .group_cards .card img,
-.new_arrival .group_card .card img,
-.shopbypets .group_cards .card img,
-.shopbypets .group_card .card img,
-.newproducdselling .group_cards .card img,
-.newproducdselling .group_card .card img {
+.for_dog .card img {
   border-radius: 15px 15px 0px 0px;
 }
-.new_arrival .group_cards .card p,
-.new_arrival .group_card .card p,
-.shopbypets .group_cards .card p,
-.shopbypets .group_card .card p,
-.newproducdselling .group_cards .card p,
-.newproducdselling .group_card .card p {
-  text-align: center;
-  font-size: 18px;
-  margin-top: 10px;
-  font-weight: bold;
-}
-.new_arrival .group_cards .card span,
-.new_arrival .group_card .card span,
-.shopbypets .group_cards .card span,
-.shopbypets .group_card .card span,
-.newproducdselling .group_cards .card span,
-.newproducdselling .group_card .card span {
+.for_dog .card .price {
   display: flex;
-  font-size: 18px;
-  margin: 10px 15px;
-  font-weight: bold;
+  padding-left: 15px;
 }
-.new_arrival .group_cards .card .content-card,
-.new_arrival .group_card .card .content-card,
-.shopbypets .group_cards .card .content-card,
-.shopbypets .group_card .card .content-card,
-.newproducdselling .group_cards .card .content-card,
-.newproducdselling .group_card .card .content-card {
-  margin: 10px 15px;
+.for_dog .card .price p {
+  padding-top: 5px;
 }
-.new_arrival .group_cards .card .content-card .material-icons,
-.new_arrival .group_card .card .content-card .material-icons,
-.shopbypets .group_cards .card .content-card .material-icons,
-.shopbypets .group_card .card .content-card .material-icons,
-.newproducdselling .group_cards .card .content-card .material-icons,
-.newproducdselling .group_card .card .content-card .material-icons {
-  font-size: 18px;
-}
-.new_arrival .group_cards .card .content-card .material-icons:nth-of-type(1),
-.new_arrival .group_card .card .content-card .material-icons:nth-of-type(1),
-.shopbypets .group_cards .card .content-card .material-icons:nth-of-type(1),
-.shopbypets .group_card .card .content-card .material-icons:nth-of-type(1),
-.newproducdselling .group_cards .card .content-card .material-icons:nth-of-type(1),
-.newproducdselling .group_card .card .content-card .material-icons:nth-of-type(1) {
-  color: gold;
-}
-.new_arrival .group_cards .card .content-card .number label,
-.new_arrival .group_card .card .content-card .number label,
-.shopbypets .group_cards .card .content-card .number label,
-.shopbypets .group_card .card .content-card .number label,
-.newproducdselling .group_cards .card .content-card .number label,
-.newproducdselling .group_card .card .content-card .number label {
-  font-size: 23px;
-  font-weight: bold;
-}
-.new_arrival .group_cards .btn,
-.new_arrival .group_card .btn,
-.shopbypets .group_cards .btn,
-.shopbypets .group_card .btn,
-.newproducdselling .group_cards .btn,
-.newproducdselling .group_card .btn {
+.for_dog .card button {
   text-align: center;
-}
-.new_arrival .group_cards .btn button,
-.new_arrival .group_card .btn button,
-.shopbypets .group_cards .btn button,
-.shopbypets .group_card .btn button,
-.newproducdselling .group_cards .btn button,
-.newproducdselling .group_card .btn button {
-  padding: 6px;
-  background-color: rgba(41, 89, 168, 0.636);
-  width: 70%;
+  background: rgb(21, 160, 189);
+  border: 1px solid #15A0BD;
+  display: flex;
+  gap: 10px;
   border-radius: 10px;
-  text-transform: uppercase;
-  display: flex;
-  margin-left: 40px;
-  gap: 20px;
+  padding: 8px 25px 5px 25px;
+  font-size: 13px;
+  color: white;
+  margin: 5px 35px;
 }
-
-.newproducdselling .group_card {
-  display: flex;
-  flex-wrap: wrap;
+.for_dog .card button p {
+  padding-top: 3px;
 }
-=======
-  height: 30vh;
-  background-color: rosybrown;
+.for_dog .card h3 {
+  margin: 3px;
+  margin-left: 15px;
+}
+.for_dog .card .group_icons {
+  width: 100%;
+  margin-top: -15px;
+  padding-left: 12px;
+  padding-top: 15px;
+  display: flex;
+  font-size: small;
+  color: orange;
 }/*# sourceMappingURL=home.css.map */
->>>>>>> 0f93e5dd43d16bb1200df7c13fbd70ddafce6597
