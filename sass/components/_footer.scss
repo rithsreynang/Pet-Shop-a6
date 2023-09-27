@@ -13,16 +13,16 @@ footer {
 
     .footer-right {
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
 
         img {
             height: 200px;
-            margin-top: -25px;
-
+            margin-top: -55px;
         }
 
         p {
             margin-left: 30px;
+            margin-top: -40px;
         }
 
         .footer-center1 h4 {
@@ -51,8 +51,9 @@ footer {
 
 hr {
     margin-top: 40px;
-    margin-left: 25%;
+    margin-left: 26%;
     width: 50%;
+    border: 1px solid rgb(94, 87, 87);
 }
 
 .footer-content-left {
@@ -62,6 +63,13 @@ hr {
 
     .left-footer {
         margin-left: 30px;
+        a{
+            color: black;
+        }
+        a:hover{
+            color: rgb(20, 12, 247);
+        }
+
 
     }
 
