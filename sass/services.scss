@@ -1,0 +1,42 @@
+@import 'components/nav';
+
+header {
+    background-image: url(../images/services/header1.png);
+    background-size: 65%;
+    // background-image: url(https://pixabay.com/photos/trees-sunset-silhouette-walk-7882545/);
+    background-color: rgb(189, 211, 238);
+    background-position: center;
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    height: 70vh;
+    text-align: center;
+    font-size: 30px;
+    padding-top: 35px;
+
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+
+    .food_product {
+        text-align: center;
+        margin-top: 70px;
+    }
+
+    @import 'main';
+}
+
+// ::-webkit-scrollbar {
+//     width: 2px;
+// }
+
+// ::-webkit-scrollbar-track {
+//     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+// }
+
+// ::-webkit-scrollbar-thumb {
+//     background-color: white;
+//     outline: 1px solid white;
+// }

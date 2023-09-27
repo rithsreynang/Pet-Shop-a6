@@ -16,8 +16,8 @@ nav {
         }
     }
     .nav-center {
-        font-size: 28px;
         margin-top: 25px;
+        font-size: 25px;
         display: grid;
         justify-content: center;
         grid-template-columns: repeat(3, 1fr);
@@ -26,11 +26,16 @@ nav {
         }
         
     }
+    // .nav-center h4:hover {
+    //     border-bottom: 2px solid rgb(46, 148, 231);
+    //     width: 110px;
+    // //     padding-top: -10px;
+    // }
     .nav-left {
         display: flex;
         justify-content: end;
-        gap: 40px;
-        margin-right: 60px;
+        gap: 50px;
+        margin-right: 80px;
         margin-top: 25px; 
 
     }
