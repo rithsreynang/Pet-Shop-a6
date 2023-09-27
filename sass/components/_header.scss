@@ -42,7 +42,7 @@
     animation: slideshow 15s infinite;
     background-position: center;
     background-size: cover;
-    background-color: #000;
+    background-color: #fbfbfb;
     color: #fff;
     font-size: 36px;
     display: flex;
@@ -70,9 +70,6 @@
         margin-bottom: 300px;
         width: 80%;
         margin-left: 150px;
-        // box-shadow: -4px 29px 137px 48px rgba(255,255,255,0.14);
-        // -webkit-box-shadow: -4px 29px 137px 48px rgba(255,255,255,0.14);
-        // -moz-box-shadow: -4px 29px 137px 48px rgba(255,255,255,0.14);
     }
 }
 
@@ -97,7 +94,3 @@
     background-image: url(../../images/home/cover-img3.jpg);
 }
 
-// .slide:nth-child(5) {
-//     animation-delay: -1s;
-//     background-image: url(../../images/home/cover-img4.jpg);
-// }
