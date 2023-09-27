@@ -1,1 +1,5 @@
+<<<<<<< HEAD:dist/about-us.min.css.map
 {"version":3,"sources":["../sass/components/_nav.scss"],"names":[],"mappings":"AAAA,IACI,YAAA,CACA,WAAA,CACA,iCAAA,CAGI,mBACI,gBAAA,CACA,gBAAA,CAGR,gBACI,cAAA,CACA,eAAA,CACA,YAAA,CACA,sBAAA,CACA,oCAAA,CAGJ,cACI,YAAA,CACA,mBAAA,CACA,QAAA,CACA,iBAAA,CACA,eAAA,CAEJ,oBACI,cAAA","file":"about-us.min.css"}
+=======
+{"version":3,"sourceRoot":"","sources":["../../sass/components/_nav.scss"],"names":[],"mappings":"AAAA,IACI,aACA,WACA,YACA,kCACA,eACA,gBACA,eACA,WACA,sBACA,gCAEI,mBACI,iBACA,iBAGR,gBACI,gBACA,eACA,aACA,uBACA,qCACA,mBACI,eASR,cACI,aACA,oBACA,SACA,kBACA,gBAGJ,oBACI","file":"about-us.min.css"}
+>>>>>>> bd2b5dbd57ef79ce2314d8a80ebe4e28ecb049a2:dist/css/about-us.min.css.map

@@ -1,1 +1,5 @@
+<<<<<<< HEAD:dist/about-us.min.css
 nav{display:grid;height:12vh;grid-template-columns:1fr 1fr 1fr}nav .nav-right img{margin-top:-35px;margin-left:70px}nav .nav-center{font-size:25px;margin-top:25px;display:grid;justify-content:center;grid-template-columns:repeat(3, 1fr)}nav .nav-left{display:flex;justify-content:end;gap:40px;margin-right:60px;margin-top:25px}nav .material-icons{font-size:40px}/*# sourceMappingURL=about-us.min.css.map */
+=======
+nav{display:grid;width:100%;height:12vh;grid-template-columns:1fr 1fr 1fr;position:fixed;overflow:hidden;transition:.4s;z-index:99;background-color:#fff;border-bottom:1px solid #15a0bd}nav .nav-right img{margin-top:-28px;margin-left:70px}nav .nav-center{margin-top:25px;font-size:25px;display:grid;justify-content:center;grid-template-columns:repeat(3, 1fr)}nav .nav-center h4{font-size:18px}nav .nav-left{display:flex;justify-content:end;gap:50px;margin-right:80px;margin-top:25px}nav .material-icons{font-size:30px}/*# sourceMappingURL=about-us.min.css.map */
+>>>>>>> bd2b5dbd57ef79ce2314d8a80ebe4e28ecb049a2:dist/css/about-us.min.css
