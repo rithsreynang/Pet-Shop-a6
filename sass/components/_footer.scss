@@ -17,7 +17,7 @@ footer {
 
         img {
             height: 200px;
-            margin-top: -55px;
+            margin-top: -25px;
 
         }
 
@@ -29,6 +29,7 @@ footer {
             display: grid;
             justify-content: center;
         }
+
     }
 
     .footer-center1 {
@@ -58,17 +59,21 @@ hr {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 50px 30px;
-    .left-footer{
-    margin-left:30px;
+
+    .left-footer {
+        margin-left: 30px;
 
     }
+
     .right-footer {
         display: flex;
         justify-content: end;
         gap: 30px;
+        margin-right: 20px;
 
         .material-icons {
             font-size: 33px;
+
         }
     }
 
