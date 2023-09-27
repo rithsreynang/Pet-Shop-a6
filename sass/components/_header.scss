@@ -1,6 +1,7 @@
 header{
     display: flex;
     height: 60vh;
+    background-color: antiquewhite;
 }
 #slider{
     overflow: hidden;
@@ -8,7 +9,6 @@ header{
 #slider figure{
     position: relative;
     width:500%;
-    // height: 300%;
     margin: 0;
     left: 0;
     animation: 10s slider infinite;

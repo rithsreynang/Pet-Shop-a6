@@ -1,6 +1,6 @@
 nav {
   display: grid;
-  height: 10vh;
+  height: 12vh;
   grid-template-columns: 1fr 1fr 1fr;
 }
 nav .nav-right img {
@@ -113,4 +113,88 @@ main .for_dog .card .group_icons {
   display: flex;
   font-size: small;
   color: orange;
+}
+main nav {
+  display: grid;
+  height: 12vh;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+main nav .nav-right img {
+  margin-top: -35px;
+  margin-left: 70px;
+}
+main nav .nav-center {
+  font-size: 25px;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(3, 1fr);
+}
+main nav .nav-left {
+  display: flex;
+  justify-content: end;
+  gap: 50px;
+  margin-right: 80px;
+  margin-top: 25px;
+}
+main nav .material-icons {
+  font-size: 40px;
+}
+main header {
+  display: flex;
+  height: 60vh;
+  background-color: antiquewhite;
+}
+main #slider {
+  overflow: hidden;
+}
+main #slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  animation: 10s slider infinite;
+}
+main #silder figure img {
+  float: left;
+  width: 1000%;
+}
+@keyframes slider {
+  0% {
+    left: 0;
+  }
+  20% {
+    left: 0;
+  }
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -100%;
+  }
+  50% {
+    left: -200%;
+  }
+  70% {
+    left: -200%;
+  }
+  75% {
+    left: -300%;
+  }
+  95% {
+    left: -300%;
+  }
+  100% {
+    left: -400%;
+  }
+}
+main main {
+  display: flex;
+  margin-top: 100px;
+  height: 20vh;
+  background-color: aqua;
+}
+main footer {
+  display: flex;
+  height: 30vh;
+  background-color: rosybrown;
 }/*# sourceMappingURL=services.css.map */
