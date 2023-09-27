@@ -1,0 +1,88 @@
+.new_arrival,
+.shopbypets,
+.newproducdselling {
+    margin-top: 30px;
+    h3 {
+        text-align: center;
+        margin-bottom: 60px;
+        font-size: 28px;
+    }
+
+    .group_cards,
+    .group_card {
+        display: flex;
+        justify-content: space-evenly;
+        gap: 10px;
+        margin: 20px;
+        overflow-x: scroll;
+
+        .card {
+            border: 1px solid #000;
+            padding-bottom: 15px;
+            border-radius: 15px;
+
+            img {
+                border-radius: 15px 15px 0px 0px;
+            }
+
+            p {
+                text-align: center;
+                font-size: 18px;
+                margin-top: 10px;
+                font-weight: bold;
+
+            }
+
+            span {
+                display: flex;
+                font-size: 18px;
+                margin: 10px 15px;
+                font-weight: bold;
+
+            }
+
+            .content-card {
+                margin: 10px 15px;
+
+                .material-icons {
+                    font-size: 18px;
+                }
+
+                .material-icons:nth-of-type(1) {
+                    color: gold;
+
+                }
+
+                .number {
+                    label {
+                        font-size: 23px;
+                        font-weight: bold;
+                    }
+
+                }
+            }
+        }
+
+        .btn {
+            text-align: center;
+
+            button {
+                padding: 6px;
+                background-color: rgba(41, 89, 168, 0.636);
+                width: 70%;
+                border-radius: 10px;
+                text-transform: uppercase;
+                display: flex;
+                margin-left: 40px;
+                gap: 20px;
+
+            }
+
+        }
+    }
+}
+
+.newproducdselling .group_card {
+    display: flex;
+    flex-wrap: wrap;
+}
