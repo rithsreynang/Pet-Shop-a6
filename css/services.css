@@ -37,9 +37,13 @@
   overflow-y: hidden;
 }
 .shopping .group_card::-webkit-scrollbar,
+.shopping .group_cards::-webkit-scrollbar,
 .newarrival .group_card::-webkit-scrollbar,
+.newarrival .group_cards::-webkit-scrollbar,
 .shopebypets .group_card::-webkit-scrollbar,
-.newproducdselling .group_card::-webkit-scrollbar {
+.shopebypets .group_cards::-webkit-scrollbar,
+.newproducdselling .group_card::-webkit-scrollbar,
+.newproducdselling .group_cards::-webkit-scrollbar {
   display: none;
 }
 .shopping .card,
@@ -50,7 +54,7 @@
   border-radius: 15px;
   text-align: start;
   font-size: 15px;
-  height: 65vh;
+  height: auto;
   gap: 30px;
   padding-bottom: 30px;
 }
@@ -69,6 +73,14 @@
   gap: 20px;
   font-size: 18px;
   margin: 10px;
+}
+.shopping .card label,
+.newarrival .card label,
+.shopebypets .card label,
+.newproducdselling .card label {
+  margin: 40px;
+  font-weight: bold;
+  font-size: 18px;
 }
 .shopping .card button,
 .newarrival .card button,
@@ -114,6 +126,24 @@
   font-size: 8px;
   color: rgb(249, 165, 11);
 }
+.shopping .card .listnumber-card,
+.newarrival .card .listnumber-card,
+.shopebypets .card .listnumber-card,
+.newproducdselling .card .listnumber-card {
+  display: flex;
+  font-weight: bold;
+  justify-content: space-around;
+  flex-direction: row-reverse;
+  margin-top: 10px;
+  font-size: 18px;
+}
+.shopping .card .listnumber-card span,
+.newarrival .card .listnumber-card span,
+.shopebypets .card .listnumber-card span,
+.newproducdselling .card .listnumber-card span {
+  font-size: 20px;
+  color: red;
+}
 
 nav {
   display: grid;
@@ -135,7 +165,7 @@ nav .nav-center {
   margin-top: 25px;
   font-size: 25px;
   display: grid;
-  justify-content: center;
+  justify-items: center;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
 }
@@ -298,7 +328,7 @@ hr {
   margin-top: 40px;
   margin-left: 26%;
   width: 50%;
-  border: 1px solid rgb(94, 87, 87);
+  border: 1px solid rgba(94, 87, 87, 0.243);
 }
 
 .footer-content-left {
@@ -386,9 +416,13 @@ main .newproducdselling .group_card {
   overflow-y: hidden;
 }
 main .shopping .group_card::-webkit-scrollbar,
+main .shopping .group_cards::-webkit-scrollbar,
 main .newarrival .group_card::-webkit-scrollbar,
+main .newarrival .group_cards::-webkit-scrollbar,
 main .shopebypets .group_card::-webkit-scrollbar,
-main .newproducdselling .group_card::-webkit-scrollbar {
+main .shopebypets .group_cards::-webkit-scrollbar,
+main .newproducdselling .group_card::-webkit-scrollbar,
+main .newproducdselling .group_cards::-webkit-scrollbar {
   display: none;
 }
 main .shopping .card,
@@ -399,7 +433,7 @@ main .newproducdselling .card {
   border-radius: 15px;
   text-align: start;
   font-size: 15px;
-  height: 65vh;
+  height: auto;
   gap: 30px;
   padding-bottom: 30px;
 }
@@ -418,6 +452,14 @@ main .newproducdselling .card .price {
   gap: 20px;
   font-size: 18px;
   margin: 10px;
+}
+main .shopping .card label,
+main .newarrival .card label,
+main .shopebypets .card label,
+main .newproducdselling .card label {
+  margin: 40px;
+  font-weight: bold;
+  font-size: 18px;
 }
 main .shopping .card button,
 main .newarrival .card button,
@@ -462,6 +504,24 @@ main .newproducdselling .card .group_icons {
   display: flex;
   font-size: 8px;
   color: rgb(249, 165, 11);
+}
+main .shopping .card .listnumber-card,
+main .newarrival .card .listnumber-card,
+main .shopebypets .card .listnumber-card,
+main .newproducdselling .card .listnumber-card {
+  display: flex;
+  font-weight: bold;
+  justify-content: space-around;
+  flex-direction: row-reverse;
+  margin-top: 10px;
+  font-size: 18px;
+}
+main .shopping .card .listnumber-card span,
+main .newarrival .card .listnumber-card span,
+main .shopebypets .card .listnumber-card span,
+main .newproducdselling .card .listnumber-card span {
+  font-size: 20px;
+  color: red;
 }
 main .price p {
   text-decoration: line-through;

@@ -9,7 +9,6 @@ nav {
     z-index: 99;
     background-color: rgb(255, 255, 255);
     border-bottom: 1px solid rgb(21, 160, 189);
-
     .nav-right {
         img {
             margin-top: -28px;
@@ -21,7 +20,7 @@ nav {
         margin-top: 25px;
         font-size: 25px;
         display: grid;
-        justify-content: center;
+        justify-items: center;
         grid-template-columns: repeat(3, 1fr);
         gap: 30px;
 

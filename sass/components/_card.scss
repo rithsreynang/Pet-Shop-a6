@@ -3,9 +3,10 @@
 .shopebypets,
 .newproducdselling {
     text-align: center;
+
     // margin-top: -20px;
     // margin-bottom: 30px;
-    h2{
+    h2 {
         text-align: center;
         font-size: 25px;
         margin: 30px;
@@ -20,7 +21,8 @@
         overflow-y: hidden;
     }
 
-    .group_card::-webkit-scrollbar {
+    .group_card::-webkit-scrollbar,
+    .group_cards::-webkit-scrollbar {
         display: none;
     }
 
@@ -29,7 +31,7 @@
         border-radius: 15px;
         text-align: start;
         font-size: 15px;
-        height: 65vh;
+        height: auto;
         gap: 30px;
         padding-bottom: 30px;
 
@@ -40,10 +42,16 @@
         .price {
             display: flex;
             padding-left: 10px;
-            gap: 20px;  
+            gap: 20px;
             font-size: 18px;
             margin: 10px;
-            
+
+        }
+
+        label {
+            margin: 40px;
+            font-weight: bold;
+            font-size: 18px;
         }
 
         button {
@@ -62,7 +70,8 @@
                 font-size: 13px;
                 padding-top: 7px;
             }
-            i{
+
+            i {
                 padding-top: 5px;
             }
 
@@ -76,9 +85,23 @@
             width: 100%;
             padding-left: 12px;
             display: flex;
-            font-size:8px;
+            font-size: 8px;
             color: rgb(249, 165, 11);
-          
+
+        }
+
+        .listnumber-card {
+            display: flex;
+            font-weight: bold;
+            justify-content: space-around;
+            flex-direction: row-reverse;
+            margin-top: 10px;
+            font-size: 18px;
+
+            span {
+                font-size: 20px;
+                color: red;
+            }
         }
     }
 
