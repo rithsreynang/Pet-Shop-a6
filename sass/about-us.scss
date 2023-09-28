@@ -1,31 +1,12 @@
 
-@import"./components/nav";
-// header{
-//     height: 100vh;
-//     background-image: url(../images/about/header.jpg);
-//     background-repeat: no-repeat;
-//     background-size: 100% 100%;
-//     .bg{ 
-//         height: 50vh;
-//         padding: 150px;
-//         margin: 40px;
-//         width: 50%;
-//         background: rgba(49, 49, 66, 0.453);
-//         text-align: justify;
-//         color: white;
-//         font-size: 25px;
-       
-//     }
-
-// }
-
+@import"../sass/main.scss";
 header{
     height: 100vh;
     background:url(../images/about/header.jpg);
     background-size: 100% 100%;
     .bg{
       background:rgba(0, 0, 0, 0.195);
-      height: 69vh;width: 50%;
+      height: 95vh;width: 50%;
       text-align: justify;
       color: white;
       padding: 100px 100px ;
@@ -37,37 +18,87 @@ header{
     }
   }
 main{
-    // height: 100vh;
-    padding-top: 80px;
-
+  height: 100vh;
+  
     .mission{
-      background: rgb(179, 209, 245);
-    //   height: 50vh;
-      padding: 30px 150px 30px 150px;
-      border: 1px solid black;
+      background: #b3d1f5;
+      padding: 0px 300px 30px 300px;
       text-align: justify;
-      font-size: 25px;
-      border-radius: 30px;
+      // border-radius: 30px;
     h2{
-        margin-bottom: 30px;
-        text-align: center;
+      text-align: center;
+      margin: 25px 0px 15px 0px;
       }
     }
     h2{
       text-align: center;
-      margin-top: 100px;
-      font-size: 30px;
+      margin-top: 50px;
+      margin-bottom: 50px;
+      // font-size: 30px;
     }
     .value{
       display: flex;
-      justify-content: space-around;
+      // justify-content: center;
+      margin: 0px 50px 10px 150px;
       padding-top: 50px;
       text-align: center;
       .card-icon{
         img{
-          height: 15vh;
-          width: 70%;
+          height: 75px;
+          width: 50%;
         }
+        p{
+          margin: 0px 30px 0px 30px ;
+        }
+      }
+      .pet{
+        img{
+          height: 75px;
+          width: 30%;
+        }
+        p{
+          margin: 0px 30px 0px 30px ;
+        }
+      }
+      
+    }
+    .team{
+      display: flex;
+      justify-content: space-evenly;
+      .card-i{
+        background: rgb(179, 209, 245);
+        height: 80vh;
+        width: 30%;
+        border-radius: 20px;
+        text-align: center;
+        padding: 0px 30px 0px 30px ;
+
+        img{
+          height: 250px;width: 250px;
+          border-radius: 132px;
+          margin: 60px 0px 30px 0px;
+        }
+        p{
+          margin: 10px 20px 30px 20px;
+          text-align: justify;
+        }
+      }
+    }
+
+    .text{
+      background:white;
+      padding:30px 100px 30px 100px ;
+      font-size: 20px;
+      p{
+        text-align: justify;
+        margin-top: 30px;
+      }
+    }
+    .background{
+      display: flex;justify-content: space-around;
+      img{
+        height: 60vh;
+        width: 30%;
       }
     }
   }
