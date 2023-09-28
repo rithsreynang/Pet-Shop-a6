@@ -5,7 +5,7 @@
   text-decoration: none;
   list-style: none;
   box-sizing: border-box;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: sans-serif;
 }
 
 .shopping,
@@ -19,7 +19,7 @@
 .shopebypets h2,
 .newproducdselling h2 {
   text-align: center;
-  font-size: 25px;
+  font-size: 20px;
   margin: 30px;
 }
 .shopping .group_cards,
@@ -306,6 +306,9 @@ footer .footer_top .logo_shop img {
 footer .footer_top .logo_shop h5 {
   padding-left: -40px;
 }
+footer .footer_top .logo_shop h5:hover {
+  color: teal;
+}
 footer .footer_top .our-service,
 footer .footer_top .our-story {
   flex: 1;
@@ -320,6 +323,11 @@ footer .footer_top .our-service ul li,
 footer .footer_top .our-story ul li {
   margin: 5px;
 }
+footer .footer_top .our-service li:hover,
+footer .footer_top .our-story li:hover {
+  color: teal;
+  text-decoration: underline;
+}
 footer .footer_top .contact-us {
   flex: 1;
   margin-top: 50px;
@@ -331,6 +339,11 @@ footer .footer_top .contact-us .page {
   display: flex;
   gap: 10px;
 }
+footer .footer_top .contact-us .call:hover,
+footer .footer_top .contact-us .email:hover,
+footer .footer_top .contact-us .page:hover {
+  color: teal;
+}
 footer .footer-down {
   background: teal;
   height: 10vh;
@@ -340,5 +353,9 @@ footer .footer-down {
   gap: 15px;
 }
 footer .footer-down a {
-  color: white;
+  color: rgb(0, 0, 0);
+}
+footer .footer-down a:hover {
+  color: rgb(255, 255, 255);
+  text-decoration: underline;
 }/*# sourceMappingURL=main.css.map */

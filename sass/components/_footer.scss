@@ -18,6 +18,9 @@ footer{
             h5{
                 padding-left: -40px;
             }
+            h5:hover{
+                color: teal;
+            }
         }
         .our-service,
         .our-story{
@@ -30,6 +33,10 @@ footer{
                     margin: 5px;
                 }
 
+            }
+            li:hover{
+                color: teal;
+                text-decoration: underline;
             }
         }
         
@@ -44,6 +51,11 @@ footer{
                 display: flex;
                 gap: 10px;
             }
+            .call:hover,
+            .email:hover,
+            .page:hover{
+                color: teal;
+            }
         }
     }
     .footer-down{
@@ -54,7 +66,11 @@ footer{
         align-items: center;
         gap: 15px;
         a{
-            color: white;
+            color: rgb(0, 0, 0);
+        }
+        a:hover{
+            color: rgb(255, 255, 255);
+            text-decoration: underline;
         }
     }
 }

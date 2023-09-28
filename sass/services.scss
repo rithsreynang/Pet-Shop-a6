@@ -23,14 +23,7 @@ main {
     .food_product {
         text-align: center;
         margin-top: -20px;
-
-        span {
-            color: rgb(21, 160, 189);
-            font-size: 30px;
-            margin-left: 15px;
-            margin-right: 15px;
-
-        }
+        font-size: 16px;
 
         p {
             margin-top: 20px;
@@ -118,10 +111,12 @@ main {
         .card {
             border: 1px solid rgb(21, 160, 189);
             border-radius: 15px;
-            width: 30%;
+            width: 30rem !important;
             font-size: 16px;
             text-align: justify;
             padding: 10px;
+
+
 
             .card-top {
                 display: flex;
