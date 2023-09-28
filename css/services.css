@@ -119,7 +119,7 @@ nav {
   display: grid;
   width: 100%;
   height: 12vh;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 0.5fr 1fr 0.5fr;
   position: fixed;
   overflow: hidden;
   transition: 0.4s;
@@ -137,9 +137,19 @@ nav .nav-center {
   display: grid;
   justify-content: center;
   grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
 }
 nav .nav-center h4 {
-  font-size: 18px;
+  text-align: center;
+  width: 50%;
+  padding-top: 10px;
+  font-size: 20px;
+  height: 50%;
+}
+nav .nav-center h4:hover {
+  transform: scale(1.1);
+  transition: 0.4s;
+  border-bottom: 2px solid black;
 }
 nav .nav-left {
   display: flex;
@@ -149,7 +159,7 @@ nav .nav-left {
   margin-top: 25px;
 }
 nav .material-icons {
-  font-size: 30px;
+  font-size: 34px;
 }
 
 @keyframes slideshow {
