@@ -1,88 +1,60 @@
-footer {
+footer{
+    background: rgba(0, 128, 128, 0.129);
+    margin-top: 100px;
     display: flex;
     flex-direction: column;
-    background-color: rgba(82, 134, 238, 0.31);
-    margin-top: 50px;
-}
-
-.footer-content-right {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    justify-items: center;
-    margin-top: 50px;
-
-    .footer-right {
+    .footer_top{
         display: flex;
-        flex-direction: column;
-
-        img {
-            height: 200px;
-            margin-top: -55px;
+        height: 40vh;
+        justify-content: space-evenly;
+        .logo_shop{
+            flex: 2;
+            padding-left: 40px;
+            img{
+                margin-top: -10px;
+                margin-left: 80px;
+    
+            }
+            h5{
+                padding-left: -40px;
+            }
         }
-
-        p {
-            margin-left: 30px;
-            margin-top: -40px;
-        }
-
-        .footer-center1 h4 {
-            display: grid;
-            justify-content: center;
-        }
-
-    }
-
-    .footer-center1 {
-        h4 {
-            font-size: 25px;
-        }
-
-        .list-footer {
-            font-size: 18px;
-            margin-top: 15px;
-
-            p {
-                margin-top: 10px;
+        .our-service,
+        .our-story{
+            flex: 1;
+            margin-top: 50px;
+            ul{
+                font-weight: bold;
+                font-size: 13px;
+                li{
+                    margin: 5px;
+                }
 
             }
         }
-    }
-}
+        
+        .contact-us{
+            flex: 1;
+            margin-top: 50px;
 
-hr {
-    margin-top: 40px;
-    margin-left: 26%;
-    width: 50%;
-    border: 1px solid rgba(94, 87, 87, 0.243);
-}
-
-.footer-content-left {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin: 50px 30px;
-
-    .left-footer {
-        margin-left: 30px;
-        a{
-            color: black;
+            .call,
+            .email,
+            .page{
+                margin: 5px;
+                display: flex;
+                gap: 10px;
+            }
         }
-        a:hover{
-            color: rgb(20, 12, 247);
-        }
-
-
     }
-
-    .right-footer {
+    .footer-down{
+        background: teal;
+        height: 10vh;
         display: flex;
-        justify-content: end;
-        gap: 30px;
-        margin-right: 20px;
-
-        .material-icons {
-            font-size: 33px;
-
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        a{
+            color: white;
         }
     }
-
 }
