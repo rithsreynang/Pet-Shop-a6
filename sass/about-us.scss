@@ -1,13 +1,13 @@
 @import"./main.scss";
-
-@import"../sass/main.scss";
+// @import"../sass/main.scss";
 header{
     height: 100vh;
     background:url(../images/about/header.jpg);
     background-size: 100% 100%;
     .bg{
       background:rgba(0, 0, 0, 0.195);
-      height: 90vh;width: 50%;
+      height:90vh;
+      width: 50%;
       text-align: justify;
       color: white;
       padding: 100px 100px ;
@@ -19,24 +19,22 @@ header{
     }
   }
 main{
-  // height: 100vh;t
     .mission{
       background: #b3d1f5;
-      padding: 30px 300px 60px 300px;
+      padding: 0px 300px 60px 300px;
       text-align: justify;
       border-radius: 20px;
-      border: 1px solid yellow;
+      border: 2px solid #15A0BD;
 
     h2{
       text-align: center;
-      margin: 25px 0px 15px 0px;
-      }
+      margin: 25px 0px 20px 0px;
     }
-    h2{
-      text-align: center;
-      margin-top: 40px;
-      margin-bottom: 10px;
-      // font-size: 30px;
+  }
+  h2{
+    text-align: center;
+    margin: 25px 0px 20px 0px;
+  
     }
     .value{
       display: flex;
@@ -69,7 +67,7 @@ main{
       .card-i{
         background: rgb(179, 209, 245);
         // height: 100vh;
-        border: 1px solid yellow;
+        border: 2px solid #07b9dd;
         width: 30%;
         border-radius: 20px;
         text-align: center;
@@ -77,10 +75,10 @@ main{
           height: 300px;width: 300px;
           border-radius: 150px;
           margin: 60px 0px 30px 0px;
-          border: 1px solid yellow;
+          border: 2px solid #15A0BD;
         }
         p{
-          margin: 10px 30px 20px 30px;
+          margin: 10px 20px 20px 20px;
           text-align: justify;
         }
       }
@@ -101,67 +99,77 @@ main{
         height: 35vh;
         width: 250px;
         border-radius: 10px;
-        border: 1px solid yellow;
-
+        border: 2px solid #15A0BD;
       }
     }
   }
-  
-header {
-  height: 100vh;
-  background: url(../images/about/header.jpg);
-  background-size: 100% 100%;
+  @mixin fordestop {
+    @media(max-width: 1024px) {
+        main {
+          .mission{
+            width: 233px;
+          }
 
-  .bg {
-    background: rgba(0, 0, 0, 0.195);
-    height: 69vh;
-    width: 50%;
-    text-align: justify;
-    color: white;
-    padding: 100px 100px;
-    font-size: 25px;
+        }
+        }
 
-    h1 {
-      text-align: center;
-      margin-bottom: 20px;
+        footer {
+            background-color: aliceblue;
+
+            .footer-content-right {
+                .footer-right {
+                    label {
+                        margin-left: 40px;
+                    }
+                }
+
+                .footer-center1 {
+                    h4 {
+                        font-size: 20px;
+                    }
+
+                    .list-footer {
+                        font-size: 15px;
+                    }
+                }
+            }
+
+            .footer-content-left {
+                margin: 40px 20px;
+
+                .left-footer {
+                    span {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
     }
-  }
+
+
+
+@mixin fortablate {
+    @media(max-width: 768px) {
+        nav {
+            .nav-right {
+                img {
+                    margin-top: -25px;
+                }
+            }
+
+            .nav-center {
+                display: flex;
+                overflow: hidden;
+            }
+        }
+    }
+
 }
 
-main {
-  padding-top: 80px;
-
-  .mission {
-    background: rgb(179, 209, 245);
-    padding: 30px 150px 30px 150px;
-    border: 1px solid black;
-    text-align: justify;
-    font-size: 25px;
-    border-radius: 30px;
-
-    h2 {
-      margin-bottom: 30px;
-      text-align: center;
+@mixin forphone {
+    @media(max-width: 320px) {
+        nav {
+            background-color: rgb(73, 45, 8);
+        }
     }
-  }
-
-  h2 {
-    text-align: center;
-    margin-top: 100px;
-    font-size: 30px;
-  }
-
-  .value {
-    display: flex;
-    justify-content: space-around;
-    padding-top: 50px;
-    text-align: center;
-
-    .card-icon {
-      img {
-        height: 15vh;
-        width: 70%;
-      }
-    }
-  }
 }
