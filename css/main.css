@@ -50,7 +50,7 @@
   border-radius: 15px;
   text-align: start;
   font-size: 15px;
-  height: 65vh;
+  height: auto;
   gap: 30px;
   padding-bottom: 30px;
 }
