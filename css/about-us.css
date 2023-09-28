@@ -342,7 +342,7 @@ header {
 }
 header .bg {
   background: rgba(0, 0, 0, 0.195);
-  height: 95vh;
+  height: 90vh;
   width: 50%;
   text-align: justify;
   color: white;
@@ -354,13 +354,12 @@ header .bg h1 {
   margin-bottom: 20px;
 }
 
-main {
-  height: 100vh;
-}
 main .mission {
   background: #b3d1f5;
-  padding: 0px 300px 30px 300px;
+  padding: 30px 300px 60px 300px;
   text-align: justify;
+  border-radius: 20px;
+  border: 1px solid yellow;
 }
 main .mission h2 {
   text-align: center;
@@ -368,8 +367,8 @@ main .mission h2 {
 }
 main h2 {
   text-align: center;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 40px;
+  margin-bottom: 10px;
 }
 main .value {
   display: flex;
@@ -397,20 +396,20 @@ main .team {
 }
 main .team .card-i {
   background: rgb(179, 209, 245);
-  height: 80vh;
+  border: 1px solid yellow;
   width: 30%;
   border-radius: 20px;
   text-align: center;
-  padding: 0px 30px 0px 30px;
 }
 main .team .card-i img {
-  height: 250px;
-  width: 250px;
-  border-radius: 132px;
+  height: 300px;
+  width: 300px;
+  border-radius: 150px;
   margin: 60px 0px 30px 0px;
+  border: 1px solid yellow;
 }
 main .team .card-i p {
-  margin: 10px 20px 30px 20px;
+  margin: 10px 30px 20px 30px;
   text-align: justify;
 }
 main .text {
@@ -419,14 +418,16 @@ main .text {
   font-size: 20px;
 }
 main .text p {
-  text-align: justify;
-  margin-top: 30px;
+  text-align: center;
+  margin-bottom: 30px;
 }
 main .background {
   display: flex;
   justify-content: space-around;
 }
 main .background img {
-  height: 60vh;
-  width: 30%;
+  height: 35vh;
+  width: 250px;
+  border-radius: 10px;
+  border: 1px solid yellow;
 }/*# sourceMappingURL=about-us.css.map */
