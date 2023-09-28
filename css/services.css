@@ -13,8 +13,6 @@
 .shopebypets,
 .newproducdselling {
   text-align: center;
-  margin-top: 30px;
-  margin-bottom: 50px;
 }
 .shopping h2,
 .newarrival h2,
@@ -22,7 +20,7 @@
 .newproducdselling h2 {
   text-align: center;
   font-size: 25px;
-  margin: 50px;
+  margin: 30px;
 }
 .shopping .group_cards,
 .shopping .group_card,
@@ -51,8 +49,9 @@
   border: 1px solid rgb(229, 223, 223);
   border-radius: 15px;
   text-align: start;
-  font-size: 18px;
-  height: auto;
+  font-size: 15px;
+  height: 65vh;
+  gap: 30px;
   padding-bottom: 30px;
 }
 .shopping .card img,
@@ -66,10 +65,10 @@
 .shopebypets .card .price,
 .newproducdselling .card .price {
   display: flex;
-  padding-left: 15px;
-  margin-top: -10px;
+  padding-left: 10px;
   gap: 20px;
-  font-size: 20px;
+  font-size: 18px;
+  margin: 10px;
 }
 .shopping .card button,
 .newarrival .card button,
@@ -84,19 +83,20 @@
   padding: 0px 25px;
   font-size: 13px;
   color: white;
-  margin: -5px 35px;
+  margin: 5px 35px;
 }
 .shopping .card button p,
 .newarrival .card button p,
 .shopebypets .card button p,
 .newproducdselling .card button p {
   font-size: 13px;
+  padding-top: 7px;
 }
 .shopping .card button i,
 .newarrival .card button i,
 .shopebypets .card button i,
 .newproducdselling .card button i {
-  padding-top: 7px;
+  padding-top: 5px;
 }
 .shopping .card h3,
 .newarrival .card h3,
@@ -109,11 +109,10 @@
 .shopebypets .card .group_icons,
 .newproducdselling .card .group_icons {
   width: 100%;
-  margin-top: -10px;
   padding-left: 12px;
   display: flex;
-  font-size: 10px;
-  color: orange;
+  font-size: 8px;
+  color: rgb(249, 165, 11);
 }
 
 nav {
@@ -363,8 +362,6 @@ main .newarrival,
 main .shopebypets,
 main .newproducdselling {
   text-align: center;
-  margin-top: 30px;
-  margin-bottom: 50px;
 }
 main .shopping h2,
 main .newarrival h2,
@@ -372,7 +369,7 @@ main .shopebypets h2,
 main .newproducdselling h2 {
   text-align: center;
   font-size: 25px;
-  margin: 50px;
+  margin: 30px;
 }
 main .shopping .group_cards,
 main .shopping .group_card,
@@ -401,8 +398,9 @@ main .newproducdselling .card {
   border: 1px solid rgb(229, 223, 223);
   border-radius: 15px;
   text-align: start;
-  font-size: 18px;
-  height: auto;
+  font-size: 15px;
+  height: 65vh;
+  gap: 30px;
   padding-bottom: 30px;
 }
 main .shopping .card img,
@@ -416,10 +414,10 @@ main .newarrival .card .price,
 main .shopebypets .card .price,
 main .newproducdselling .card .price {
   display: flex;
-  padding-left: 15px;
-  margin-top: -10px;
+  padding-left: 10px;
   gap: 20px;
-  font-size: 20px;
+  font-size: 18px;
+  margin: 10px;
 }
 main .shopping .card button,
 main .newarrival .card button,
@@ -434,19 +432,20 @@ main .newproducdselling .card button {
   padding: 0px 25px;
   font-size: 13px;
   color: white;
-  margin: -5px 35px;
+  margin: 5px 35px;
 }
 main .shopping .card button p,
 main .newarrival .card button p,
 main .shopebypets .card button p,
 main .newproducdselling .card button p {
   font-size: 13px;
+  padding-top: 7px;
 }
 main .shopping .card button i,
 main .newarrival .card button i,
 main .shopebypets .card button i,
 main .newproducdselling .card button i {
-  padding-top: 7px;
+  padding-top: 5px;
 }
 main .shopping .card h3,
 main .newarrival .card h3,
@@ -459,25 +458,19 @@ main .newarrival .card .group_icons,
 main .shopebypets .card .group_icons,
 main .newproducdselling .card .group_icons {
   width: 100%;
-  margin-top: -10px;
   padding-left: 12px;
   display: flex;
-  font-size: 10px;
-  color: orange;
+  font-size: 8px;
+  color: rgb(249, 165, 11);
 }
-main .shopping .card {
-  margin-top: -20px;
-}
-main .shopping span {
-  font-weight: bold;
+main .price p {
+  text-decoration: line-through;
   font-size: 15px;
 }
-main .shopping .price p {
-  text-decoration: line-through;
-}
-main .shopping .price span {
-  font-size: 25px;
+main .price span {
+  font-weight: bold;
   text-decoration: none;
+  margin-top: -5px;
 }
 
 ::-webkit-scrollbar {
@@ -485,7 +478,7 @@ main .shopping .price span {
 }
 
 ::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.3);
 }
 
 ::-webkit-scrollbar-thumb {
