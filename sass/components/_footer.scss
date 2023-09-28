@@ -1,59 +1,68 @@
-footer{
+footer {
     background: rgba(0, 128, 128, 0.129);
     margin-top: 100px;
     display: flex;
     flex-direction: column;
-    .footer_top{
+
+    .footer_top {
         display: flex;
         height: 40vh;
         justify-content: space-evenly;
-        .logo_shop{
+
+        .logo_shop {
             flex: 2;
             padding-left: 40px;
-            img{
+
+            img {
                 margin-top: -10px;
                 margin-left: 80px;
-    
+
             }
-            h5{
+
+            h5 {
                 padding-left: -40px;
             }
         }
+
         .our-service,
-        .our-story{
+        .our-story {
             flex: 1;
             margin-top: 50px;
-            ul{
+
+            ul {
                 font-weight: bold;
                 font-size: 13px;
-                li{
+
+                li {
                     margin: 5px;
                 }
 
             }
         }
-        
-        .contact-us{
+
+        .contact-us {
             flex: 1;
             margin-top: 50px;
 
             .call,
             .email,
-            .page{
+            .page {
                 margin: 5px;
                 display: flex;
                 gap: 10px;
             }
         }
     }
-    .footer-down{
+
+    .footer-down {
         background: teal;
         height: 10vh;
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 15px;
-        a{
+
+        a {
             color: white;
         }
     }
