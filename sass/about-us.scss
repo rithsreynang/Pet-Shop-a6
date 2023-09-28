@@ -1,5 +1,112 @@
 @import"./main.scss";
 
+@import"../sass/main.scss";
+header{
+    height: 100vh;
+    background:url(../images/about/header.jpg);
+    background-size: 100% 100%;
+    .bg{
+      background:rgba(0, 0, 0, 0.195);
+      height: 90vh;width: 50%;
+      text-align: justify;
+      color: white;
+      padding: 100px 100px ;
+      font-size: 25px;
+      h1{
+        text-align: center;
+        margin-bottom: 20px;
+      }
+    }
+  }
+main{
+  // height: 100vh;t
+    .mission{
+      background: #b3d1f5;
+      padding: 30px 300px 60px 300px;
+      text-align: justify;
+      border-radius: 20px;
+      border: 1px solid yellow;
+
+    h2{
+      text-align: center;
+      margin: 25px 0px 15px 0px;
+      }
+    }
+    h2{
+      text-align: center;
+      margin-top: 40px;
+      margin-bottom: 10px;
+      // font-size: 30px;
+    }
+    .value{
+      display: flex;
+      margin: 0px 50px 10px 150px;
+      padding-top: 50px;
+      text-align: center;
+      .card-icon{
+        img{
+          height: 75px;
+          width: 50%;
+        }
+        p{
+          margin: 0px 30px 0px 30px ;
+        }
+      }
+      .pet{
+        img{
+          height: 75px;
+          width: 30%;
+        }
+        p{
+          margin: 0px 30px 0px 30px ;
+        }
+      }
+      
+    }
+    .team{
+      display: flex;
+      justify-content: space-evenly;
+      .card-i{
+        background: rgb(179, 209, 245);
+        // height: 100vh;
+        border: 1px solid yellow;
+        width: 30%;
+        border-radius: 20px;
+        text-align: center;
+        img{
+          height: 300px;width: 300px;
+          border-radius: 150px;
+          margin: 60px 0px 30px 0px;
+          border: 1px solid yellow;
+        }
+        p{
+          margin: 10px 30px 20px 30px;
+          text-align: justify;
+        }
+      }
+    }
+
+    .text{
+      background:white;
+      padding:30px 100px 30px 100px ;
+      font-size: 20px;
+      p{
+        text-align: center;
+        margin-bottom: 30px;
+      }
+    }
+    .background{
+      display: flex;justify-content: space-around;
+      img{
+        height: 35vh;
+        width: 250px;
+        border-radius: 10px;
+        border: 1px solid yellow;
+
+      }
+    }
+  }
+  
 header {
   height: 100vh;
   background: url(../images/about/header.jpg);
