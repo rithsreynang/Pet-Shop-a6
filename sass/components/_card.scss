@@ -5,11 +5,13 @@
     text-align: center;
     margin-top: 30px;
     margin-bottom: 50px;
-    h2{
+
+    h2 {
         text-align: center;
         font-size: 25px;
         margin: 50px;
     }
+
     .group_cards,
     .group_card {
         display: flex;
@@ -30,6 +32,7 @@
         font-size: 18px;
         height: auto;
         padding-bottom: 30px;
+
         img {
             border-radius: 15px 15px 0px 0px;
         }
@@ -37,10 +40,10 @@
         .price {
             display: flex;
             padding-left: 15px;
-           margin-top: -10px;
+            margin-top: -10px;
             gap: 20px;
             font-size: 20px;
-            
+
         }
 
         button {
@@ -50,15 +53,16 @@
             display: flex;
             gap: 10px;
             border-radius: 10px;
-            padding:0px 25px;
+            padding: 0px 25px;
             font-size: 13px;
             color: white;
             margin: -5px 35px;
 
-            p{
+            p {
                 font-size: 13px;
             }
-            i{
+
+            i {
                 padding-top: 7px;
             }
 
@@ -73,9 +77,9 @@
             margin-top: -10px;
             padding-left: 12px;
             display: flex;
-            font-size:10px;
+            font-size: 10px;
             color: orange;
-          
+
         }
     }
 
