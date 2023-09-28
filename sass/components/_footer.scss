@@ -37,6 +37,7 @@ footer{
             flex: 1;
             margin-top: 50px;
 
+<<<<<<< HEAD
             .call,
             .email,
             .page{
@@ -44,6 +45,24 @@ footer{
                 display: flex;
                 gap: 10px;
             }
+=======
+hr {
+    margin-top: 40px;
+    margin-left: 26%;
+    width: 50%;
+    border: 1px solid rgba(94, 87, 87, 0.243);
+}
+
+.footer-content-left {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 50px 30px;
+
+    .left-footer {
+        margin-left: 30px;
+        a{
+            color: black;
+>>>>>>> 49518e11e2e212adbcb896481918addd0b887051
         }
     }
     .footer-down{

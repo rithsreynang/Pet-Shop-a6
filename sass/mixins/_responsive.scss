@@ -1,20 +1,23 @@
 @mixin fordestop {
     @media(max-width: 1024px) {
-        .nav-right {
-            img {
-                width: 120px;
-                height: 120px;
-                margin-top: -8px;
-            }
-
-            .nav-center {
-                h4 {
-                    font-size: 16px;
+        nav {
+            .nav-right {
+                img {
+                    width: 120px;
+                    height: 120px;
+                    margin-top: -25px;
                 }
-            }
 
-            .material-icons {
-                font-size: 25px;
+                .nav-center {
+                    h4 {
+                        font-size: 16px;
+                    }
+                }
+
+                .material-icons {
+                    font-size: 25px;
+                }
+
             }
         }
 
@@ -24,20 +27,62 @@
 
         .content-slide {
             color: rgb(255, 255, 255);
-            border: 5px solid black;
+            // border: 5px solid black;
 
             h1 {
-                font-size: 60px;
+                font-size: 50px;
             }
 
             p {
-                font-size: 30px;
+                font-size: 25px;
+                margin-left: 90px;
             }
         }
 
 
+        main {
+            .card {
+                img {
+                    width: 233px;
+                }
+
+            }
+        }
+
+        footer {
+            background-color: aliceblue;
+
+            .footer-content-right {
+                .footer-right {
+                    label {
+                        margin-left: 40px;
+                    }
+                }
+
+                .footer-center1 {
+                    h4 {
+                        font-size: 20px;
+                    }
+
+                    .list-footer {
+                        font-size: 15px;
+                    }
+                }
+            }
+
+            .footer-content-left {
+                margin: 40px 20px;
+
+                .left-footer {
+                    span {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
     }
 }
+
 
 @mixin fortablate {
     @media(max-width: 768px) {
@@ -47,12 +92,14 @@
                     margin-top: -25px;
                 }
             }
-            .nav-center{
+
+            .nav-center {
                 display: flex;
                 overflow: hidden;
             }
         }
     }
+
 }
 
 @mixin forphone {
