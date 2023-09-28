@@ -220,22 +220,22 @@ nav .material-icons {
 .slide:nth-child(1) {
   left: 0%;
   animation-delay: 11s;
-  background-image: url(../../images/home/cover-img2.jpg);
+  background-image: url(../../images/home/header2.jpg);
 }
 
 .slide:nth-child(2) {
   animation-delay: 8s;
-  background-image: url(../../images/home/cover-img4.jpg);
+  background-image: url(../../images/home/header1.jpg);
 }
 
 .slide:nth-child(3) {
   animation-delay: 5s;
-  background-image: url(../../images/home/cover-img1.jpg);
+  background-image: url(../../images/home/header3.jpg);
 }
 
 .slide:nth-child(4) {
   animation-delay: 2s;
-  background-image: url(../../images/home/cover-img3.jpg);
+  background-image: url(../../images/home/cover-img1.jpg);
 }
 
 main {
@@ -259,14 +259,15 @@ footer {
 }
 .footer-content-right .footer-right {
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
 }
 .footer-content-right .footer-right img {
   height: 200px;
-  margin-top: -25px;
+  margin-top: -55px;
 }
 .footer-content-right .footer-right p {
   margin-left: 30px;
+  margin-top: -40px;
 }
 .footer-content-right .footer-right .footer-center1 h4 {
   display: grid;
@@ -285,8 +286,9 @@ footer {
 
 hr {
   margin-top: 40px;
-  margin-left: 25%;
+  margin-left: 26%;
   width: 50%;
+  border: 1px solid rgb(94, 87, 87);
 }
 
 .footer-content-left {
@@ -296,6 +298,12 @@ hr {
 }
 .footer-content-left .left-footer {
   margin-left: 30px;
+}
+.footer-content-left .left-footer a {
+  color: black;
+}
+.footer-content-left .left-footer a:hover {
+  color: rgb(20, 12, 247);
 }
 .footer-content-left .right-footer {
   display: flex;
