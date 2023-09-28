@@ -1,15 +1,15 @@
-.for_dog,
+.shopping,
 .newarrival,
 .shopebypets,
 .newproducdselling {
     text-align: center;
-    margin-top: 30px;
-    margin-bottom: 10px;
 
+    // margin-top: -20px;
+    // margin-bottom: 30px;
     h2 {
         text-align: center;
         font-size: 25px;
-        margin: 50px;
+        margin: 30px;
     }
 
     .group_cards,
@@ -21,37 +21,37 @@
         overflow-y: hidden;
     }
 
-    .group_card::-webkit-scrollbar {
+    .group_card::-webkit-scrollbar,
+    .group_cards::-webkit-scrollbar {
         display: none;
     }
 
     .card {
-        height: 65vh;
         border: 1px solid rgb(229, 223, 223);
         border-radius: 15px;
         text-align: start;
         font-size: 15px;
         height: auto;
+        gap: 30px;
         padding-bottom: 30px;
 
         img {
             border-radius: 15px 15px 0px 0px;
-            margin-bottom: 20px;
-        }
-
-        p {
-            font-size: 18px;
-            font-weight: bold;
-            text-align: center;
         }
 
         .price {
             display: flex;
-            padding-left: 15px;
+            padding-left: 10px;
+            gap: 20px;
+            font-size: 18px;
+            margin: 10px;
 
-            p {
-                padding-top: 5px;
-            }
+        }
+
+        label {
+            margin: 40px;
+            font-weight: bold;
+            font-size: 18px;
         }
 
         button {
@@ -61,43 +61,46 @@
             display: flex;
             gap: 10px;
             border-radius: 10px;
-            padding: 8px 25px 5px 25px;
+            padding: 0px 25px;
             font-size: 13px;
             color: white;
-            margin: 10px 25px;
-            width: 80%;
+            margin: 5px 35px;
 
-            b {
+            p {
                 font-size: 13px;
+                padding-top: 7px;
             }
+
+            i {
+                padding-top: 5px;
+            }
+
         }
 
         h3 {
-            margin: 3px;
             margin-left: 15px;
         }
 
         .group_icons {
             width: 100%;
-            margin-top: -15px;
             padding-left: 12px;
-            padding-top: 15px;
             display: flex;
-            font-size: small;
-            color: orange;
+            font-size: 8px;
+            color: rgb(249, 165, 11);
 
         }
 
         .listnumber-card {
             display: flex;
+            font-weight: bold;
+            justify-content: space-around;
             flex-direction: row-reverse;
-            justify-content: space-between;
-            margin: 0px 15px;
+            margin-top: 10px;
+            font-size: 18px;
 
             span {
-                font-weight: bold;
                 font-size: 20px;
-                color: rgb(199, 89, 11);
+                color: red;
             }
         }
     }

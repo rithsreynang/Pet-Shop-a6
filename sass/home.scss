@@ -1,7 +1,12 @@
-body{
-    display:flex;
+@import"mixins/responsive";
+@import"./main.scss";
+body {
+    display: flex;
     flex-direction: column;
+    @include fordestop;
+    @include fortablate;
+    @include forphone;
 }
-@import"main";
+
+
 @import"components/card";
-         
