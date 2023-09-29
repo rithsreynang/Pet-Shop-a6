@@ -5,7 +5,7 @@
   text-decoration: none;
   list-style: none;
   box-sizing: border-box;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: sans-serif;
 }
 
 .shopping,
@@ -358,6 +358,9 @@ footer .footer-down a {
 footer .footer-down a:hover {
   color: rgb(255, 255, 255);
   text-decoration: underline;
+}
+footer .footer-down a:hover a {
+  color: white;
 }
 
 header {
