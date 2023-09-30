@@ -15,10 +15,20 @@ header {
             font-size: 50px;
             color:rgb(13, 107, 107);
         }
+        @include device-Screen("desktop") {
+            h2{
+                font-size: 35px;
+            }
+        }
         h5{
             font-size: 23px;
             color: white;
             margin: 5px;
+        }
+        @include device-Screen("desktop"){
+            h5{
+                font-size: 19px;
+            }
         }
         p{
             font-size: 18px;
@@ -30,6 +40,17 @@ header {
                 margin: 10px;
                 color:rgb(13, 107, 107);
             }
+            @include device-Screen("desktop"){
+                span{
+                    font-size: 25px;
+                    margin: 5px;
+                }
+            }
+        }
+        @include device-Screen("desktop"){
+            p{
+                font-size: 14px;
+            }
         }
         button{
             background:rgb(13, 107, 107) ;
@@ -40,13 +61,34 @@ header {
             margin-top: 50px;
             font-weight: bold;
         }
+        @include device-Screen("desktop"){
+            button{
+                padding: 5px 10px;
+                border-radius: 8px;
+                margin-top: 30px;
+            }
+        }
 
         
+    }
+    @include device-Screen("desktop"){
+        .header-left{
+            flex: 3;
+            margin-left: 50px;
+            margin-top: 110px;
+        }
     }
     .header-right{
         flex:2;
         margin-top: -120px;
 
+    }
+    @include device-Screen("desktop"){
+        .header-right{
+            flex:1.5;
+            margin-top: -150px;
+    
+        }
     }
 
 }
@@ -100,13 +142,13 @@ main {
     margin: 30px;
 
     p {
-        font-size: 17px;
+        font-size: 18px;
     }
+        
 }
 
 .service_cards {
     height: 75vh;
-
     background-image: url(../images/service/service.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -134,7 +176,18 @@ main {
             transform: scale(1.05);
             box-shadow: 0px 7px 10px rgba(black, 0.5)
         }
+        @include device-Screen("desktop"){
+            padding-top: -20px;
+           
+        }
     }
+     @include device-Screen("desktop"){
+        .group_cards{
+            margin-left: 110px;
+            
+
+        }
+     }
 }
 
 .comment {
@@ -180,6 +233,11 @@ main {
 
             }
         }
+        @include device-Screen("desktop"){
+            .card:nth-last-child(3){
+                display: none;
+            }
+        }
     }
 
 }
@@ -206,6 +264,13 @@ main {
         margin-left: 60px;
 
     }
+    @include device-Screen("desktop"){
+        #email,
+        #comment{
+            margin-left: 20px;
+            margin: 5px;
+        }
+    }
     #submit{
         width: 20%;
         color: white;
@@ -213,9 +278,18 @@ main {
         padding: 5px 10px;
         border: 1px solid rgb(21, 160, 189);
         border-radius: 10px;
-        margin-left: 525px;
+        margin-left: 450px;
         background:rgb(4, 141, 4);
-        padding: 7px;
+    }
+    @include device-Screen("desktop"){
+        #submit{
+            margin-left: 370px;
+        }
     }
 
 }
+@include device-Screen("desktop"){
+    .customer_comment {
+        margin-left: 250px;
+    }
+} 

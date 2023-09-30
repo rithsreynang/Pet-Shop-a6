@@ -65,6 +65,7 @@ nav {
                 font-size: 17px;
             }
         }
+        
 
         @include device-Screen("tablate") {
             h4 {
@@ -86,6 +87,8 @@ nav {
 
         }
     }
+
+    @include device-Screen("desktop") {}
 
     .nav-left {
         display: flex;
@@ -122,7 +125,5 @@ nav {
 // @include device-Screen("phone") {
 //     nav {
 //         height: 12vh;
-
-//     }
 
 // }
