@@ -31,12 +31,27 @@ nav .nav-right img {
     width: 120px;
   }
 }
+@media screen and (max-width: ) {
+  nav .nav-right img {
+    margin-top: -20px;
+    height: 115px;
+    width: 115px;
+  }
+}
+@media screen and (max-width: 600px) {
+  nav .nav-right img {
+    margin-left: 5px;
+    margin-top: -15px;
+    height: 110px;
+    width: 110px;
+  }
+}
 nav .nav-center {
   margin-top: 18px;
   font-size: 25px;
-  display: grid;
-  justify-items: center;
-  grid-template-columns: 1fr 1fr 1.5fr;
+  display: flex;
+  justify-content: space-around;
+  gap: 50px;
 }
 nav .nav-center h4 {
   text-align: center;
@@ -45,7 +60,17 @@ nav .nav-center h4 {
 }
 @media screen and (max-width: 1024px) {
   nav .nav-center h4 {
-    font-size: 16px;
+    font-size: 17px;
+  }
+}
+@media screen and (max-width: ) {
+  nav .nav-center h4 {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 600px) {
+  nav .nav-center h4 {
+    font-size: 13px;
   }
 }
 nav .nav-center h4:hover {
@@ -58,7 +83,7 @@ nav .nav-left {
   display: flex;
   justify-content: end;
   gap: 50px;
-  margin-right: 70px;
+  margin-right: 90px;
   margin-top: 22px;
 }
 nav .nav-left .material-icons {
@@ -69,7 +94,23 @@ nav .nav-left .material-icons {
     font-size: 28px;
   }
 }
+@media screen and (max-width: 600px) {
+  nav .nav-left .material-icons {
+    font-size: 23px;
+  }
+}
+@media screen and (max-width: 600px) {
+  nav .nav-left {
+    gap: 20px;
+    margin-right: 10px;
+  }
+}
 
+@media screen and (max-width: 600px) {
+  nav {
+    height: 12vh;
+  }
+}
 .shopping,
 .newarrival,
 .shopebypets,
@@ -192,6 +233,22 @@ nav .nav-left .material-icons {
     padding: 3px;
   }
 }
+@media screen and (max-width: ) {
+  .shopping .card button p,
+  .newarrival .card button p,
+  .shopebypets .card button p,
+  .newproducdselling .card button p {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .shopping .card button p,
+  .newarrival .card button p,
+  .shopebypets .card button p,
+  .newproducdselling .card button p {
+    font-size: 13px;
+  }
+}
 .shopping .card button i,
 .newarrival .card button i,
 .shopebypets .card button i,
@@ -203,7 +260,45 @@ nav .nav-left .material-icons {
   .newarrival .card button i,
   .shopebypets .card button i,
   .newproducdselling .card button i {
-    font-size: 18px;
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: ) {
+  .shopping .card button i,
+  .newarrival .card button i,
+  .shopebypets .card button i,
+  .newproducdselling .card button i {
+    font-size: 25px;
+    margin-left: 20px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .shopping .card button i,
+  .newarrival .card button i,
+  .shopebypets .card button i,
+  .newproducdselling .card button i {
+    font-size: 20px;
+    margin-left: 20px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .shopping .card button,
+  .newarrival .card button,
+  .shopebypets .card button,
+  .newproducdselling .card button {
+    width: 70%;
+    margin-left: 45px;
+    padding: 5px;
+  }
+}
+@media screen and (max-width: ) {
+  .shopping .card button,
+  .newarrival .card button,
+  .shopebypets .card button,
+  .newproducdselling .card button {
+    width: 80%;
+    padding: 5px;
+    margin-left: 23px;
   }
 }
 .shopping .card h3,
@@ -240,6 +335,14 @@ nav .nav-left .material-icons {
   font-size: 20px;
   color: red;
 }
+@media screen and (max-width: 600px) {
+  .shopping .card,
+  .newarrival .card,
+  .shopebypets .card,
+  .newproducdselling .card {
+    gap: 20px;
+  }
+}
 
 @keyframes slideshow {
   0% {
@@ -270,12 +373,18 @@ nav .nav-left .material-icons {
   margin-bottom: -40px;
 }
 
+@media screen and (max-width: 600px) {
+  .silder {
+    margin-top: 50px;
+    height: 60vh;
+  }
+}
 .slide {
   position: absolute;
   width: 100%;
   height: inherit;
   overflow: hidden;
-  animation: slideshow 15s infinite;
+  animation: slideshow 20s infinite;
   background-position: center;
   background-size: cover;
   background-color: #fbfbfb;
@@ -300,7 +409,14 @@ nav .nav-left .material-icons {
 }
 @media screen and (max-width: 1024px) {
   .content-slide h1 {
-    font-size: 50px;
+    font-size: 55px;
+    margin-top: 130px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .content-slide h1 {
+    font-size: 40px;
+    margin-top: 130px;
   }
 }
 .content-slide p {
@@ -312,8 +428,15 @@ nav .nav-left .material-icons {
 }
 @media screen and (max-width: 1024px) {
   .content-slide p {
-    font-size: 28px;
-    margin-left: 100px;
+    font-size: 30px;
+    margin-left: 80px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .content-slide p {
+    font-size: 20px;
+    margin-left: 40px;
+    margin-bottom: 80%;
   }
 }
 
@@ -344,6 +467,11 @@ main {
   margin-top: 100px;
 }
 
+@media screen and (max-width: 600px) {
+  main {
+    margin-top: 50px;
+  }
+}
 footer {
   background: rgba(0, 128, 128, 0.129);
   margin-top: 100px;
@@ -363,11 +491,33 @@ footer .footer_top .logo_shop img {
   margin-top: -10px;
   margin-left: 80px;
 }
+@media screen and (max-width: 600px) {
+  footer .footer_top .logo_shop img {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: ) {
+  footer .footer_top .logo_shop img {
+    margin-top: 10px;
+    margin-left: 40px;
+  }
+}
 footer .footer_top .logo_shop h5 {
   padding-left: -40px;
 }
+@media screen and (max-width: 1024px) {
+  footer .footer_top .logo_shop h5 {
+    margin: -30px 20px 30px -20px;
+    text-align: justify;
+  }
+}
 footer .footer_top .logo_shop h5:hover {
   color: teal;
+}
+@media screen and (max-width: ) {
+  footer .footer_top .logo_shop {
+    display: none;
+  }
 }
 footer .footer_top .our-service,
 footer .footer_top .our-story {
@@ -403,6 +553,16 @@ footer .footer_top .contact-us .call:hover,
 footer .footer_top .contact-us .email:hover,
 footer .footer_top .contact-us .page:hover {
   color: teal;
+}
+@media screen and (max-width: ) {
+  footer .footer_top {
+    margin-left: 82px;
+  }
+}
+@media screen and (max-width: 600px) {
+  footer .footer_top {
+    margin-left: 22px;
+  }
 }
 footer .footer-down {
   background: teal;
@@ -550,6 +710,22 @@ body {
     padding: 3px;
   }
 }
+@media screen and (max-width: ) {
+  .shopping .card button p,
+  .newarrival .card button p,
+  .shopebypets .card button p,
+  .newproducdselling .card button p {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .shopping .card button p,
+  .newarrival .card button p,
+  .shopebypets .card button p,
+  .newproducdselling .card button p {
+    font-size: 13px;
+  }
+}
 .shopping .card button i,
 .newarrival .card button i,
 .shopebypets .card button i,
@@ -561,7 +737,45 @@ body {
   .newarrival .card button i,
   .shopebypets .card button i,
   .newproducdselling .card button i {
-    font-size: 18px;
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: ) {
+  .shopping .card button i,
+  .newarrival .card button i,
+  .shopebypets .card button i,
+  .newproducdselling .card button i {
+    font-size: 25px;
+    margin-left: 20px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .shopping .card button i,
+  .newarrival .card button i,
+  .shopebypets .card button i,
+  .newproducdselling .card button i {
+    font-size: 20px;
+    margin-left: 20px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .shopping .card button,
+  .newarrival .card button,
+  .shopebypets .card button,
+  .newproducdselling .card button {
+    width: 70%;
+    margin-left: 45px;
+    padding: 5px;
+  }
+}
+@media screen and (max-width: ) {
+  .shopping .card button,
+  .newarrival .card button,
+  .shopebypets .card button,
+  .newproducdselling .card button {
+    width: 80%;
+    padding: 5px;
+    margin-left: 23px;
   }
 }
 .shopping .card h3,
@@ -597,4 +811,12 @@ body {
 .newproducdselling .card .listnumber-card span {
   font-size: 20px;
   color: red;
+}
+@media screen and (max-width: 600px) {
+  .shopping .card,
+  .newarrival .card,
+  .shopebypets .card,
+  .newproducdselling .card {
+    gap: 20px;
+  }
 }/*# sourceMappingURL=home.css.map */

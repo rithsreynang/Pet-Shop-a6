@@ -1,3 +1,5 @@
+@import"../mixins/responsive";
+
 footer {
     background: rgba(0, 128, 128, 0.129);
     margin-top: 100px;
@@ -19,11 +21,39 @@ footer {
 
             }
 
+            @include device-Screen("phone") {
+                img {
+                    margin-left: 0;
+                }
+            }
+
+            @include device-Screen("tablate") {
+                img {
+                    margin-top: 10px;
+                    margin-left: 40px;
+                }
+            }
+
             h5 {
                 padding-left: -40px;
             }
-            h5:hover{
+
+            @include device-Screen("desktop") {
+                h5 {
+                    margin: -30px 20px 30px -20px;
+                    text-align: justify;
+                }
+
+            }
+
+            h5:hover {
                 color: teal;
+            }
+        }
+
+        @include device-Screen("tablate") {
+            .logo_shop {
+                display: none;
             }
         }
 
@@ -41,10 +71,11 @@ footer {
                 }
 
             }
-                li:hover{
+
+            li:hover {
                 color: teal;
                 text-decoration: underline;
-                }
+            }
         }
 
         .contact-us {
@@ -58,13 +89,26 @@ footer {
                 display: flex;
                 gap: 10px;
             }
+
             .call:hover,
             .email:hover,
-            .page:hover{
+            .page:hover {
                 color: teal;
             }
         }
     }
+
+    @include device-Screen("tablate") {
+        .footer_top {
+            margin-left: 82px;
+        }
+    }
+    @include device-Screen("phone") {
+        .footer_top {
+            margin-left: 22px;
+        }
+    }
+
     .footer-down {
         background: teal;
         height: 10vh;
@@ -72,16 +116,18 @@ footer {
         justify-content: center;
         align-items: center;
         gap: 15px;
-        a{
+
+        a {
             color: rgb(0, 0, 0);
         }
-        a:hover{
+
+        a:hover {
             color: rgb(255, 255, 255);
             text-decoration: underline;
 
-        a {
-            color: white;
+            a {
+                color: white;
+            }
         }
     }
-}
 }
