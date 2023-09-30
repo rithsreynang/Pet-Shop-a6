@@ -10,6 +10,7 @@ footer {
         display: flex;
         height: 40vh;
         justify-content: space-evenly;
+
         .logo_shop {
             flex: 2;
             padding-left: 40px;
@@ -18,6 +19,12 @@ footer {
                 margin-top: -10px;
                 margin-left: 80px;
 
+            }
+
+            @include device-Screen("phone") {
+                img {
+                    margin-left: 0;
+                }
             }
 
             @include device-Screen("tablate") {
@@ -30,14 +37,16 @@ footer {
             h5 {
                 padding-left: -40px;
             }
+
             @include device-Screen("desktop") {
-                h5{
-                    margin:-30px 20px 30px -20px;
+                h5 {
+                    margin: -30px 20px 30px -20px;
                     text-align: justify;
                 }
-                
+
             }
-            h5:hover{
+
+            h5:hover {
                 color: teal;
             }
         }
@@ -92,6 +101,11 @@ footer {
     @include device-Screen("tablate") {
         .footer_top {
             margin-left: 82px;
+        }
+    }
+    @include device-Screen("phone") {
+        .footer_top {
+            margin-left: 22px;
         }
     }
 

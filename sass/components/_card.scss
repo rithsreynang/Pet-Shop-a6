@@ -97,11 +97,11 @@
                 }
             }
 
-            // @include device-Screen("phone") {
-            //     p {
-            //         font-size: 13px;
-            //     }
-            // }
+            @include device-Screen("phone") {
+                p {
+                    font-size: 13px;
+                }
+            }
 
             i {
                 padding-top: 5px;
@@ -120,22 +120,22 @@
                 }
             }
 
-            // @include device-Screen("phone") {
-            //     i {
-            //         font-size: 20px;
-            //         margin-left: 20px;
-            //     }
-            // }
+            @include device-Screen("phone") {
+                i {
+                    font-size: 20px;
+                    margin-left: 20px;
+                }
+            }
         }
 
-        // @include device-Screen("phone") {
-        //     button {
-        //         width: 70%;
-        //         margin-left: 45px;
-        //         padding: 5px;
-        //     }
+        @include device-Screen("phone") {
+            button {
+                width: 70%;
+                margin-left: 45px;
+                padding: 5px;
+            }
 
-        // }
+        }
 
         @include device-Screen("tablate") {
             button {
@@ -176,9 +176,9 @@
 
     }
 
-    // @include device-Screen("phone") {
-    //     .card {
-    //         gap: 20px;
-    //     }
-    // }
+    @include device-Screen("phone") {
+        .card {
+            gap: 20px;
+        }
+    }
 }
