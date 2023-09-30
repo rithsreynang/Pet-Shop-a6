@@ -366,6 +366,12 @@ footer .footer_top .logo_shop img {
 footer .footer_top .logo_shop h5 {
   padding-left: -40px;
 }
+@media screen and (max-width: 1024px) {
+  footer .footer_top .logo_shop h5 {
+    margin: -30px 20px 30px -20px;
+    text-align: justify;
+  }
+}
 footer .footer_top .logo_shop h5:hover {
   color: teal;
 }
@@ -440,10 +446,20 @@ header .header-left h2 {
   font-size: 50px;
   color: rgb(13, 107, 107);
 }
+@media screen and (max-width: 1024px) {
+  header .header-left h2 {
+    font-size: 35px;
+  }
+}
 header .header-left h5 {
   font-size: 23px;
   color: white;
   margin: 5px;
+}
+@media screen and (max-width: 1024px) {
+  header .header-left h5 {
+    font-size: 19px;
+  }
 }
 header .header-left p {
   font-size: 18px;
@@ -456,6 +472,17 @@ header .header-left p span {
   margin: 10px;
   color: rgb(13, 107, 107);
 }
+@media screen and (max-width: 1024px) {
+  header .header-left p span {
+    font-size: 25px;
+    margin: 5px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  header .header-left p {
+    font-size: 14px;
+  }
+}
 header .header-left button {
   background: rgb(13, 107, 107);
   border: none;
@@ -465,9 +492,29 @@ header .header-left button {
   margin-top: 50px;
   font-weight: bold;
 }
+@media screen and (max-width: 1024px) {
+  header .header-left button {
+    padding: 5px 10px;
+    border-radius: 8px;
+    margin-top: 30px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  header .header-left {
+    flex: 3;
+    margin-left: 50px;
+    margin-top: 110px;
+  }
+}
 header .header-right {
   flex: 2;
   margin-top: -120px;
+}
+@media screen and (max-width: 1024px) {
+  header .header-right {
+    flex: 1.5;
+    margin-top: -150px;
+  }
 }
 
 main {
@@ -681,7 +728,7 @@ main .price span {
   margin: 30px;
 }
 .service p {
-  font-size: 17px;
+  font-size: 18px;
 }
 
 .service_cards {
@@ -712,6 +759,16 @@ main .price span {
 .service_cards .group_cards .card:hover {
   transform: scale(1.05);
   box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+}
+@media screen and (max-width: 1024px) {
+  .service_cards .group_cards {
+    padding-top: -20px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .service_cards .group_cards {
+    margin-left: 110px;
+  }
 }
 
 .comment {
@@ -748,6 +805,11 @@ main .price span {
 .comment .group_cards .card .card-down {
   margin: 10px;
 }
+@media screen and (max-width: 1024px) {
+  .comment .group_cards .card:nth-last-child(3) {
+    display: none;
+  }
+}
 
 .customer_comment {
   text-align: center;
@@ -771,6 +833,13 @@ main .price span {
   border: none;
   margin-left: 60px;
 }
+@media screen and (max-width: 1024px) {
+  .customer_comment #email,
+  .customer_comment #comment {
+    margin-left: 20px;
+    margin: 5px;
+  }
+}
 .customer_comment #submit {
   width: 20%;
   color: white;
@@ -778,7 +847,17 @@ main .price span {
   padding: 5px 10px;
   border: 1px solid rgb(21, 160, 189);
   border-radius: 10px;
-  margin-left: 525px;
+  margin-left: 450px;
   background: rgb(4, 141, 4);
-  padding: 7px;
+}
+@media screen and (max-width: 1024px) {
+  .customer_comment #submit {
+    margin-left: 370px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .customer_comment {
+    margin-left: 250px;
+  }
 }/*# sourceMappingURL=services.css.map */

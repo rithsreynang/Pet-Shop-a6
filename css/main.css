@@ -366,6 +366,12 @@ footer .footer_top .logo_shop img {
 footer .footer_top .logo_shop h5 {
   padding-left: -40px;
 }
+@media screen and (max-width: 1024px) {
+  footer .footer_top .logo_shop h5 {
+    margin: -30px 20px 30px -20px;
+    text-align: justify;
+  }
+}
 footer .footer_top .logo_shop h5:hover {
   color: teal;
 }
