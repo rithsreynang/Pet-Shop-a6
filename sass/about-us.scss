@@ -1,17 +1,17 @@
 @import"./main.scss";
 header {
   height: 100vh;
-  background: url(../images/about/header.jpg);
+  background: url(../images/about/pet2.jpg);
   background-size: 100% 100%;
 
   .bg {
     background: rgba(0, 0, 0, 0.195);
-    height: 90vh;
+    height: 60vh;
     width: 50%;
     text-align: justify;
     color: white;
     padding: 100px 100px;
-    font-size: 25px;
+    font-size: 22px;
 
     h1 {
       text-align: center;
@@ -21,6 +21,7 @@ header {
 }
 
 main {
+  margin-top: 48vh;
   .mission {
     background: #b3d1f5;
     padding: 0px 300px 60px 300px;
@@ -42,14 +43,14 @@ main {
 
   .value {
     display: flex;
-    margin: 0px 50px 10px 150px;
+    margin: 0px 50px 10px 200px;
     padding-top: 50px;
     text-align: center;
 
     .card-icon {
       img {
         height: 75px;
-        width: 50%;
+        width: 48%;
       }
 
       p {
@@ -60,7 +61,7 @@ main {
     .pet {
       img {
         height: 75px;
-        width: 30%;
+        width: 32%;
       }
 
       p {
