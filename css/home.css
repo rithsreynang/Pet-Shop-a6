@@ -162,6 +162,13 @@ nav .nav-right img {
   margin-top: -27px;
   margin-left: 70px;
 }
+@media screen and (max-width: 1024) {
+  nav .nav-right img {
+    width: 120px;
+    height: 120px;
+    margin-top: -25px;
+  }
+}
 nav .nav-center {
   margin-top: 18px;
   font-size: 25px;
@@ -173,6 +180,11 @@ nav .nav-center h4 {
   text-align: center;
   padding-top: 10px;
   font-size: 17px;
+}
+@media screen and (max-width: 1024) {
+  nav .nav-center h4 {
+    font-size: 16px;
+  }
 }
 nav .nav-center h4:hover {
   color: rgb(134, 214, 214);
@@ -189,6 +201,11 @@ nav .nav-left {
 }
 nav .material-icons {
   font-size: 34px;
+}
+@media screen and (max-width: 1024) {
+  nav .material-icons {
+    font-size: 15px;
+  }
 }
 
 @keyframes slideshow {
@@ -365,67 +382,6 @@ footer .footer-down a:hover a {
 body {
   display: flex;
   flex-direction: column;
-}
-@media (max-width: 1024px) {
-  body nav .nav-right img {
-    width: 120px;
-    height: 120px;
-    margin-top: -25px;
-  }
-  body nav .nav-right .nav-center h4 {
-    font-size: 16px;
-  }
-  body nav .nav-right .material-icons {
-    font-size: 25px;
-  }
-  body .silder {
-    margin-top: 60px;
-  }
-  body .content-slide {
-    color: rgb(255, 255, 255);
-  }
-  body .content-slide h1 {
-    font-size: 50px;
-  }
-  body .content-slide p {
-    font-size: 25px;
-    margin-left: 90px;
-  }
-  body main .card img {
-    width: 233px;
-  }
-  body footer {
-    background-color: aliceblue;
-  }
-  body footer .footer-content-right .footer-right label {
-    margin-left: 40px;
-  }
-  body footer .footer-content-right .footer-center1 h4 {
-    font-size: 20px;
-  }
-  body footer .footer-content-right .footer-center1 .list-footer {
-    font-size: 15px;
-  }
-  body footer .footer-content-left {
-    margin: 40px 20px;
-  }
-  body footer .footer-content-left .left-footer span {
-    font-size: 14px;
-  }
-}
-@media (max-width: 768px) {
-  body nav .nav-right img {
-    margin-top: -25px;
-  }
-  body nav .nav-center {
-    display: flex;
-    overflow: hidden;
-  }
-}
-@media (max-width: 320px) {
-  body nav {
-    background-color: rgb(73, 45, 8);
-  }
 }
 
 .shopping,
