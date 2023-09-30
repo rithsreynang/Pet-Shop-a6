@@ -29,7 +29,7 @@ main {
     text-align: justify;
     height: auto;
     padding: 20px;
-    margin-top: 80px;
+    // margin-top: 80px;
     border: 1px solid rgb(21, 160, 189);
     border-radius: 20px;
     margin: 30px;
@@ -101,7 +101,7 @@ main {
       border-radius: 20px;
       text-align: center;
       margin: 20px;
-      color: white;
+      color:$white-color;
 
       img {
         border-radius: 150px;

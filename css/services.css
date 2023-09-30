@@ -17,7 +17,7 @@ nav {
   overflow: hidden;
   transition: 0.4s;
   z-index: 99;
-  background-color: rgb(255, 255, 255);
+  background-color: white;
   border-bottom: 0.5px solid teal;
 }
 nav .nav-right img {
@@ -162,7 +162,7 @@ nav .nav-left .material-icons {
 .newarrival .card,
 .shopebypets .card,
 .newproducdselling .card {
-  border: 1px solid rgb(229, 223, 223);
+  border: 1px solid gainsboro;
   border-radius: 15px;
   text-align: start;
   font-size: 15px;
@@ -387,8 +387,8 @@ nav .nav-left .material-icons {
   animation: slideshow 20s infinite;
   background-position: center;
   background-size: cover;
-  background-color: #fbfbfb;
-  color: #fff;
+  background-color: white;
+  color: white;
   font-size: 36px;
   display: flex;
   justify-content: center;
@@ -576,7 +576,7 @@ footer .footer-down a {
   color: rgb(0, 0, 0);
 }
 footer .footer-down a:hover {
-  color: rgb(255, 255, 255);
+  color: white;
   text-decoration: underline;
 }
 footer .footer-down a:hover a {
@@ -638,7 +638,7 @@ header .header-left p span {
   }
 }
 header .header-left button {
-  background: rgb(13, 107, 107);
+  background: teal;
   border: none;
   color: white;
   padding: 10px 20px;
@@ -735,7 +735,7 @@ main .shopping .card,
 main .newarrival .card,
 main .shopebypets .card,
 main .newproducdselling .card {
-  border: 1px solid rgb(229, 223, 223);
+  border: 1px solid gainsboro;
   border-radius: 15px;
   text-align: start;
   font-size: 15px;

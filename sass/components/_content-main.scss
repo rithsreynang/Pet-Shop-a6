@@ -1,7 +1,6 @@
 @import"../mixins/responsive";
 main {
-    display: flex;
-    flex-direction: column;
+    @include display-column;
     margin-top: 100px;
 }
 

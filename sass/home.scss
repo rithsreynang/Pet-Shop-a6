@@ -1,8 +1,7 @@
 
 @import"./main.scss";
 body {
-    display: flex;
-    flex-direction: column;
+  @include display-column;
 }
 
 @import"components/card";
