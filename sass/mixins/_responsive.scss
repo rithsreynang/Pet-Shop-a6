@@ -1,7 +1,7 @@
 $devices-screen-side: (
     "phone":320,
     "taplate":768,
-    "desktop":1024
+    "desktop":1024,
 );
 
 @mixin device-Screen($screen) {
