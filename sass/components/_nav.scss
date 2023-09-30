@@ -11,6 +11,7 @@ nav {
     z-index: 99;
     background-color: rgb(255, 255, 255);
     border-bottom: 0.5px solid teal;
+
     .nav-right {
         img {
             margin-top: -27px;
@@ -19,33 +20,25 @@ nav {
 
         @include device-Screen("desktop") {
             img {
-                width: 120px;
+                margin-top: -22px;
                 height: 120px;
-                margin-top: -25px;
+                width: 120px;
             }
-
         }
+
     }
-
-
-
-
-
 
     .nav-center {
         margin-top: 18px;
         font-size: 25px;
         display: grid;
         justify-items: center;
-        grid-template-columns:1fr 1fr 1.5fr;
-
+        grid-template-columns: 1fr 1fr 1.5fr;
 
         h4 {
             text-align: center;
             padding-top: 10px;
             font-size: 17px;
-            
-           
         }
 
         @include device-Screen("desktop") {
@@ -59,7 +52,7 @@ nav {
             transform: scale(1.1);
             transition: 0.4s;
             text-decoration: underline;
-        
+
         }
     }
 
@@ -69,16 +62,18 @@ nav {
         gap: 50px;
         margin-right: 70px;
         margin-top: 22px;
-    }
 
-    .material-icons {
-        font-size: 34px;
-    }
-
-    @include device-Screen ("desktop") {
         .material-icons {
-            font-size: 15px;
+            font-size: 34px;
+        }
+
+        @include device-Screen ("desktop") {
+            .material-icons {
+                font-size: 28px;
+            }
         }
     }
+
+
 
 }
