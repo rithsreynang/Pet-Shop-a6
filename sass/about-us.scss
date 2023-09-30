@@ -1,7 +1,7 @@
 @import"./main.scss";
 header {
   height: 100vh;
-  background: url(../images/about/pet2.jpg);
+  background: url(../images/about/header.jpg);
   background-size: 100% 100%;
   padding-top: 180px;
 
@@ -27,13 +27,13 @@ main {
   .mission {   
     display: flex;
     text-align: justify;
-    height: 55vh;
+    height: 42.5vh;
     padding: 20px;
     margin-top: 80px;
     border: 1px solid rgb(21, 160, 189);
     border-radius: 20px;
     margin: 30px;
-    margin-top: 60px;
+    margin-top: 180px;
     .mission-left{
       flex: 1;
       margin-left: 30px;
@@ -46,15 +46,13 @@ main {
       flex: 2;
       padding: 10px;
       padding-right: 30px;
+      font-size: 20px;
       h2{
         padding-bottom: 30px;
 
       }
 
     }
-
-
-   
   }
   .mission:hover{
     background: rgb(21, 160, 189);
@@ -73,6 +71,7 @@ main {
    margin-left: 110px;
     padding-top: 50px;
     text-align: center;
+    justify-content: center;
 
     .pet {
 
@@ -101,6 +100,7 @@ main {
       border-radius: 20px;
       text-align: center;
       margin: 20px;
+      color: white;
 
       img {
         border-radius: 150px;

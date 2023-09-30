@@ -425,7 +425,7 @@ footer .footer-down a:hover a {
 
 header {
   height: 100vh;
-  background: url(../images/about/pet2.jpg);
+  background: url(../images/about/header.jpg);
   background-size: 100% 100%;
   padding-top: 180px;
 }
@@ -445,19 +445,16 @@ header .bg h1 {
   margin-bottom: 20px;
 }
 
-main {
-  margin-top: 48vh;
-}
 main .mission {
   display: flex;
   text-align: justify;
-  height: 55vh;
+  height: 42.5vh;
   padding: 20px;
   margin-top: 80px;
   border: 1px solid rgb(21, 160, 189);
   border-radius: 20px;
   margin: 30px;
-  margin-top: 60px;
+  margin-top: 180px;
 }
 main .mission .mission-left {
   flex: 1;
@@ -470,6 +467,7 @@ main .mission .mission-right {
   flex: 2;
   padding: 10px;
   padding-right: 30px;
+  font-size: 20px;
 }
 main .mission .mission-right h2 {
   padding-bottom: 30px;
@@ -487,6 +485,7 @@ main .value {
   margin-left: 110px;
   padding-top: 50px;
   text-align: center;
+  justify-content: center;
 }
 main .value .pet p {
   margin: 0px 30px;
@@ -508,6 +507,7 @@ main .team .card-i {
   border-radius: 20px;
   text-align: center;
   margin: 20px;
+  color: white;
 }
 main .team .card-i img {
   border-radius: 150px;
