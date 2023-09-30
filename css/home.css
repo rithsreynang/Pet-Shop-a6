@@ -5,7 +5,69 @@
   text-decoration: none;
   list-style: none;
   box-sizing: border-box;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: sans-serif;
+}
+
+nav {
+  display: grid;
+  width: 100%;
+  height: 13vh;
+  grid-template-columns: 1fr 1.5fr 1fr;
+  position: fixed;
+  overflow: hidden;
+  transition: 0.4s;
+  z-index: 99;
+  background-color: rgb(255, 255, 255);
+  border-bottom: 0.5px solid teal;
+}
+nav .nav-right img {
+  margin-top: -27px;
+  margin-left: 70px;
+}
+@media screen and (max-width: 1024px) {
+  nav .nav-right img {
+    margin-top: -22px;
+    height: 120px;
+    width: 120px;
+  }
+}
+nav .nav-center {
+  margin-top: 18px;
+  font-size: 25px;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr 1.5fr;
+}
+nav .nav-center h4 {
+  text-align: center;
+  padding-top: 10px;
+  font-size: 17px;
+}
+@media screen and (max-width: 1024px) {
+  nav .nav-center h4 {
+    font-size: 16px;
+  }
+}
+nav .nav-center h4:hover {
+  color: rgb(134, 214, 214);
+  transform: scale(1.1);
+  transition: 0.4s;
+  text-decoration: underline;
+}
+nav .nav-left {
+  display: flex;
+  justify-content: end;
+  gap: 50px;
+  margin-right: 70px;
+  margin-top: 22px;
+}
+nav .nav-left .material-icons {
+  font-size: 34px;
+}
+@media screen and (max-width: 1024px) {
+  nav .nav-left .material-icons {
+    font-size: 28px;
+  }
 }
 
 .shopping,
@@ -19,8 +81,17 @@
 .shopebypets h2,
 .newproducdselling h2 {
   text-align: center;
-  font-size: 25px;
+  font-size: 22px;
   margin: 30px;
+  margin-top: 50px;
+}
+@media screen and (max-width: 1024px) {
+  .shopping h2,
+  .newarrival h2,
+  .shopebypets h2,
+  .newproducdselling h2 {
+    font-size: 25px;
+  }
 }
 .shopping .group_cards,
 .shopping .group_card,
@@ -64,6 +135,14 @@
 .newproducdselling .card img {
   border-radius: 15px 15px 0px 0px;
 }
+@media screen and (max-width: 1024px) {
+  .shopping .card img,
+  .newarrival .card img,
+  .shopebypets .card img,
+  .newproducdselling .card img {
+    width: 233px;
+  }
+}
 .shopping .card .price,
 .newarrival .card .price,
 .shopebypets .card .price,
@@ -104,11 +183,28 @@
   font-size: 13px;
   padding-top: 7px;
 }
+@media screen and (max-width: 1024px) {
+  .shopping .card button p,
+  .newarrival .card button p,
+  .shopebypets .card button p,
+  .newproducdselling .card button p {
+    font-size: 11px;
+    padding: 3px;
+  }
+}
 .shopping .card button i,
 .newarrival .card button i,
 .shopebypets .card button i,
 .newproducdselling .card button i {
   padding-top: 5px;
+}
+@media screen and (max-width: 1024px) {
+  .shopping .card button i,
+  .newarrival .card button i,
+  .shopebypets .card button i,
+  .newproducdselling .card button i {
+    font-size: 18px;
+  }
 }
 .shopping .card h3,
 .newarrival .card h3,
@@ -143,53 +239,6 @@
 .newproducdselling .card .listnumber-card span {
   font-size: 20px;
   color: red;
-}
-
-nav {
-  display: grid;
-  width: 100%;
-  height: 12vh;
-  grid-template-columns: 0.5fr 1fr 0.5fr;
-  position: fixed;
-  overflow: hidden;
-  transition: 0.4s;
-  z-index: 99;
-  background-color: rgb(255, 255, 255);
-  border-bottom: 1px solid rgb(21, 160, 189);
-}
-nav .nav-right img {
-  margin-top: -28px;
-  margin-left: 70px;
-}
-nav .nav-center {
-  margin-top: 25px;
-  font-size: 25px;
-  display: grid;
-  justify-items: center;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-}
-nav .nav-center h4 {
-  text-align: center;
-  width: 50%;
-  padding-top: 10px;
-  font-size: 20px;
-  height: 50%;
-}
-nav .nav-center h4:hover {
-  transform: scale(1.1);
-  transition: 0.4s;
-  border-bottom: 2px solid black;
-}
-nav .nav-left {
-  display: flex;
-  justify-content: end;
-  gap: 50px;
-  margin-right: 80px;
-  margin-top: 25px;
-}
-nav .material-icons {
-  font-size: 34px;
 }
 
 @keyframes slideshow {
@@ -249,12 +298,23 @@ nav .material-icons {
   margin-top: 150px;
   font-size: 100px;
 }
+@media screen and (max-width: 1024px) {
+  .content-slide h1 {
+    font-size: 50px;
+  }
+}
 .content-slide p {
   font-size: 40px;
   text-align: center;
   margin-bottom: 300px;
   width: 80%;
   margin-left: 150px;
+}
+@media screen and (max-width: 1024px) {
+  .content-slide p {
+    font-size: 28px;
+    margin-left: 100px;
+  }
 }
 
 .slide:nth-child(1) {
@@ -306,6 +366,9 @@ footer .footer_top .logo_shop img {
 footer .footer_top .logo_shop h5 {
   padding-left: -40px;
 }
+footer .footer_top .logo_shop h5:hover {
+  color: teal;
+}
 footer .footer_top .our-service,
 footer .footer_top .our-story {
   flex: 1;
@@ -320,6 +383,11 @@ footer .footer_top .our-service ul li,
 footer .footer_top .our-story ul li {
   margin: 5px;
 }
+footer .footer_top .our-service li:hover,
+footer .footer_top .our-story li:hover {
+  color: teal;
+  text-decoration: underline;
+}
 footer .footer_top .contact-us {
   flex: 1;
   margin-top: 50px;
@@ -331,6 +399,11 @@ footer .footer_top .contact-us .page {
   display: flex;
   gap: 10px;
 }
+footer .footer_top .contact-us .call:hover,
+footer .footer_top .contact-us .email:hover,
+footer .footer_top .contact-us .page:hover {
+  color: teal;
+}
 footer .footer-down {
   background: teal;
   height: 10vh;
@@ -340,73 +413,19 @@ footer .footer-down {
   gap: 15px;
 }
 footer .footer-down a {
+  color: rgb(0, 0, 0);
+}
+footer .footer-down a:hover {
+  color: rgb(255, 255, 255);
+  text-decoration: underline;
+}
+footer .footer-down a:hover a {
   color: white;
 }
 
 body {
   display: flex;
   flex-direction: column;
-}
-@media (max-width: 1024px) {
-  body nav .nav-right img {
-    width: 120px;
-    height: 120px;
-    margin-top: -25px;
-  }
-  body nav .nav-right .nav-center h4 {
-    font-size: 16px;
-  }
-  body nav .nav-right .material-icons {
-    font-size: 25px;
-  }
-  body .silder {
-    margin-top: 60px;
-  }
-  body .content-slide {
-    color: rgb(255, 255, 255);
-  }
-  body .content-slide h1 {
-    font-size: 50px;
-  }
-  body .content-slide p {
-    font-size: 25px;
-    margin-left: 90px;
-  }
-  body main .card img {
-    width: 233px;
-  }
-  body footer {
-    background-color: aliceblue;
-  }
-  body footer .footer-content-right .footer-right label {
-    margin-left: 40px;
-  }
-  body footer .footer-content-right .footer-center1 h4 {
-    font-size: 20px;
-  }
-  body footer .footer-content-right .footer-center1 .list-footer {
-    font-size: 15px;
-  }
-  body footer .footer-content-left {
-    margin: 40px 20px;
-  }
-  body footer .footer-content-left .left-footer span {
-    font-size: 14px;
-  }
-}
-@media (max-width: 768px) {
-  body nav .nav-right img {
-    margin-top: -25px;
-  }
-  body nav .nav-center {
-    display: flex;
-    overflow: hidden;
-  }
-}
-@media (max-width: 320px) {
-  body nav {
-    background-color: rgb(73, 45, 8);
-  }
 }
 
 .shopping,
@@ -420,8 +439,17 @@ body {
 .shopebypets h2,
 .newproducdselling h2 {
   text-align: center;
-  font-size: 25px;
+  font-size: 22px;
   margin: 30px;
+  margin-top: 50px;
+}
+@media screen and (max-width: 1024px) {
+  .shopping h2,
+  .newarrival h2,
+  .shopebypets h2,
+  .newproducdselling h2 {
+    font-size: 25px;
+  }
 }
 .shopping .group_cards,
 .shopping .group_card,
@@ -465,6 +493,14 @@ body {
 .newproducdselling .card img {
   border-radius: 15px 15px 0px 0px;
 }
+@media screen and (max-width: 1024px) {
+  .shopping .card img,
+  .newarrival .card img,
+  .shopebypets .card img,
+  .newproducdselling .card img {
+    width: 233px;
+  }
+}
 .shopping .card .price,
 .newarrival .card .price,
 .shopebypets .card .price,
@@ -505,11 +541,28 @@ body {
   font-size: 13px;
   padding-top: 7px;
 }
+@media screen and (max-width: 1024px) {
+  .shopping .card button p,
+  .newarrival .card button p,
+  .shopebypets .card button p,
+  .newproducdselling .card button p {
+    font-size: 11px;
+    padding: 3px;
+  }
+}
 .shopping .card button i,
 .newarrival .card button i,
 .shopebypets .card button i,
 .newproducdselling .card button i {
   padding-top: 5px;
+}
+@media screen and (max-width: 1024px) {
+  .shopping .card button i,
+  .newarrival .card button i,
+  .shopebypets .card button i,
+  .newproducdselling .card button i {
+    font-size: 18px;
+  }
 }
 .shopping .card h3,
 .newarrival .card h3,
