@@ -1,3 +1,5 @@
+@import"../mixins/responsive";
+
 footer {
     background: rgba(0, 128, 128, 0.129);
     margin-top: 100px;
@@ -8,7 +10,6 @@ footer {
         display: flex;
         height: 40vh;
         justify-content: space-evenly;
-
         .logo_shop {
             flex: 2;
             padding-left: 40px;
@@ -19,11 +20,25 @@ footer {
 
             }
 
+            @include device-Screen("tablate") {
+                img {
+                    margin-top: 10px;
+                    margin-left: 40px;
+                }
+            }
+
             h5 {
                 padding-left: -40px;
             }
-            h5:hover{
+
+            h5:hover {
                 color: teal;
+            }
+        }
+
+        @include device-Screen("tablate") {
+            .logo_shop {
+                display: none;
             }
         }
 
@@ -41,10 +56,11 @@ footer {
                 }
 
             }
-                li:hover{
+
+            li:hover {
                 color: teal;
                 text-decoration: underline;
-                }
+            }
         }
 
         .contact-us {
@@ -58,11 +74,18 @@ footer {
                 display: flex;
                 gap: 10px;
             }
+
             .call:hover,
             .email:hover,
-            .page:hover{
+            .page:hover {
                 color: teal;
             }
+        }
+    }
+
+    @include device-Screen("tablate") {
+        .footer_top {
+            margin-left: 82px;
         }
     }
 
@@ -73,16 +96,18 @@ footer {
         justify-content: center;
         align-items: center;
         gap: 15px;
-        a{
+
+        a {
             color: rgb(0, 0, 0);
         }
-        a:hover{
+
+        a:hover {
             color: rgb(255, 255, 255);
             text-decoration: underline;
 
-        a {
-            color: white;
+            a {
+                color: white;
+            }
         }
     }
-}
 }
