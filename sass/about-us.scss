@@ -27,7 +27,7 @@ main {
   .mission {   
     display: flex;
     text-align: justify;
-    height: 42.5vh;
+    height: auto;
     padding: 20px;
     margin-top: 80px;
     border: 1px solid rgb(21, 160, 189);
@@ -39,6 +39,7 @@ main {
       margin-left: 30px;
       img{
         border-radius: 10px;
+        margin-top: 10px;
       }
       
     }
