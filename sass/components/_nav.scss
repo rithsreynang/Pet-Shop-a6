@@ -1,3 +1,5 @@
+@import"../mixins/responsive";
+
 nav {
     display: grid;
     width: 100%;
@@ -9,12 +11,27 @@ nav {
     z-index: 99;
     background-color: rgb(255, 255, 255);
     border-bottom: 1px solid rgb(21, 160, 189);
+
     .nav-right {
         img {
             margin-top: -28px;
             margin-left: 70px;
         }
+
+        @include device-Screen("desktop") {
+            img {
+                width: 120px;
+                height: 120px;
+                margin-top: -25px;
+            }
+
+        }
     }
+
+
+
+
+
 
     .nav-center {
         margin-top: 25px;
@@ -31,6 +48,13 @@ nav {
             font-size: 20px;
             height: 50%;
         }
+
+        @include device-Screen("desktop") {
+            h4 {
+                font-size: 16px;
+            }
+        }
+
         h4:hover {
             transform: scale(1.1);
             transition: 0.4s;
@@ -49,4 +73,11 @@ nav {
     .material-icons {
         font-size: 34px;
     }
+
+    @include device-Screen ("desktop") {
+        .material-icons {
+            font-size: 15px;
+        }
+    }
+
 }
