@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import"../mixins/responsive";
 
 @keyframes slideshow {
     0% {
@@ -64,6 +65,12 @@
         font-size: 100px;
     }
 
+    @include device-Screen("desktop") {
+        h1 {
+            font-size: 50px;
+        }
+    }
+
     p {
         font-size: 40px;
         text-align: center;
@@ -71,6 +78,14 @@
         width: 80%;
         margin-left: 150px;
     }
+
+    @include device-Screen("desktop") {
+        p {
+            font-size: 28px;
+            margin-left: 100px;
+        }
+    }
+
 }
 
 .slide:nth-child(1) {
@@ -93,5 +108,3 @@
     animation-delay: 2s;
     background-image: url(../../images/home/cover-img1.jpg);
 }
-
-
