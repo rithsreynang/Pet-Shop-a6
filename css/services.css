@@ -5,7 +5,7 @@
   text-decoration: none;
   list-style: none;
   box-sizing: border-box;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: sans-serif;
 }
 
 .shopping,
@@ -19,7 +19,7 @@
 .shopebypets h2,
 .newproducdselling h2 {
   text-align: center;
-  font-size: 25px;
+  font-size: 20px;
   margin: 30px;
 }
 .shopping .group_cards,
@@ -148,17 +148,17 @@
 nav {
   display: grid;
   width: 100%;
-  height: 12vh;
-  grid-template-columns: 0.5fr 1fr 0.5fr;
+  height: 13vh;
+  grid-template-columns: 1fr 1.5fr 1fr;
   position: fixed;
   overflow: hidden;
   transition: 0.4s;
   z-index: 99;
   background-color: rgb(255, 255, 255);
-  border-bottom: 1px solid rgb(21, 160, 189);
+  border-bottom: 0.5px solid teal;
 }
 nav .nav-right img {
-  margin-top: -28px;
+  margin-top: -27px;
   margin-left: 70px;
 }
 @media screen and (max-width: 1024) {
@@ -169,19 +169,16 @@ nav .nav-right img {
   }
 }
 nav .nav-center {
-  margin-top: 25px;
+  margin-top: 18px;
   font-size: 25px;
   display: grid;
   justify-items: center;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
+  grid-template-columns: 1fr 1fr 1.5fr;
 }
 nav .nav-center h4 {
   text-align: center;
-  width: 50%;
   padding-top: 10px;
-  font-size: 20px;
-  height: 50%;
+  font-size: 17px;
 }
 @media screen and (max-width: 1024) {
   nav .nav-center h4 {
@@ -189,16 +186,17 @@ nav .nav-center h4 {
   }
 }
 nav .nav-center h4:hover {
+  color: rgb(134, 214, 214);
   transform: scale(1.1);
   transition: 0.4s;
-  border-bottom: 2px solid black;
+  text-decoration: underline;
 }
 nav .nav-left {
   display: flex;
   justify-content: end;
   gap: 50px;
-  margin-right: 80px;
-  margin-top: 25px;
+  margin-right: 70px;
+  margin-top: 22px;
 }
 nav .material-icons {
   font-size: 34px;
@@ -323,6 +321,9 @@ footer .footer_top .logo_shop img {
 footer .footer_top .logo_shop h5 {
   padding-left: -40px;
 }
+footer .footer_top .logo_shop h5:hover {
+  color: teal;
+}
 footer .footer_top .our-service,
 footer .footer_top .our-story {
   flex: 1;
@@ -337,6 +338,11 @@ footer .footer_top .our-service ul li,
 footer .footer_top .our-story ul li {
   margin: 5px;
 }
+footer .footer_top .our-service li:hover,
+footer .footer_top .our-story li:hover {
+  color: teal;
+  text-decoration: underline;
+}
 footer .footer_top .contact-us {
   flex: 1;
   margin-top: 50px;
@@ -348,6 +354,11 @@ footer .footer_top .contact-us .page {
   display: flex;
   gap: 10px;
 }
+footer .footer_top .contact-us .call:hover,
+footer .footer_top .contact-us .email:hover,
+footer .footer_top .contact-us .page:hover {
+  color: teal;
+}
 footer .footer-down {
   background: teal;
   height: 10vh;
@@ -357,21 +368,62 @@ footer .footer-down {
   gap: 15px;
 }
 footer .footer-down a {
+  color: rgb(0, 0, 0);
+}
+footer .footer-down a:hover {
+  color: rgb(255, 255, 255);
+  text-decoration: underline;
+}
+footer .footer-down a:hover a {
   color: white;
 }
 
 header {
-  background-image: url(../images/service/header1.png);
-  background-size: 75%;
   background-color: rgb(189, 211, 238);
-  background-position: center;
-  background-blend-mode: multiply;
-  background-repeat: no-repeat;
-  height: 80vh;
+  height: 100vh;
   color: rgb(12, 54, 62);
-  text-align: center;
-  font-size: 40px;
   padding-top: 100px;
+  display: flex;
+}
+header .header-left {
+  flex: 2;
+  margin-left: 80px;
+  text-align: center;
+  margin-top: 90px;
+}
+header .header-left h2 {
+  font-size: 50px;
+  color: rgb(13, 107, 107);
+}
+header .header-left h5 {
+  font-size: 23px;
+  color: white;
+  margin: 5px;
+}
+header .header-left p {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  text-align: justify;
+}
+header .header-left p span {
+  font-size: 40px;
+  margin: 10px;
+  color: rgb(13, 107, 107);
+}
+header .header-left button {
+  background: rgb(13, 107, 107);
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 15px;
+  margin-top: 50px;
+  font-weight: bold;
+  margin-left: -380px;
+}
+header .header-right {
+  flex: 2;
+  margin-top: -55px;
 }
 
 main {
@@ -382,12 +434,7 @@ main {
 main .food_product {
   text-align: center;
   margin-top: -20px;
-}
-main .food_product span {
-  color: rgb(21, 160, 189);
-  font-size: 30px;
-  margin-left: 15px;
-  margin-right: 15px;
+  font-size: 16px;
 }
 main .food_product p {
   margin-top: 20px;
@@ -403,7 +450,7 @@ main .newarrival h2,
 main .shopebypets h2,
 main .newproducdselling h2 {
   text-align: center;
-  font-size: 25px;
+  font-size: 20px;
   margin: 30px;
 }
 main .shopping .group_cards,
@@ -584,6 +631,10 @@ main .price span {
   text-align: center;
   padding-top: 20px;
 }
+.service_cards .group_cards .card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+}
 
 .comment {
   margin-top: 150px;
@@ -598,7 +649,7 @@ main .price span {
 .comment .group_cards .card {
   border: 1px solid rgb(21, 160, 189);
   border-radius: 15px;
-  width: 30%;
+  width: 30rem !important;
   font-size: 16px;
   text-align: justify;
   padding: 10px;
