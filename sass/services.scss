@@ -20,9 +20,14 @@ header {
                 font-size: 35px;
             }
         }
+        @include device-Screen("tablate"){
+            h2{
+                font-size: 30px;
+            }
+        }
         h5{
             font-size: 23px;
-            color: white;
+            color:$white-color;
             margin: 5px;
         }
         @include device-Screen("desktop"){
@@ -33,7 +38,7 @@ header {
         p{
             font-size: 18px;
             font-weight: bold;
-            color: white;
+            color: $white-color;
             text-align:center;
             span{
                 font-size: 40px;
@@ -42,8 +47,13 @@ header {
             }
             @include device-Screen("desktop"){
                 span{
-                    font-size: 25px;
+                    font-size: 30px;
                     margin: 5px;
+                }
+            }
+            @include device-Screen("tablate"){
+                span{
+                    font-size: 30px;
                 }
             }
         }
@@ -53,9 +63,9 @@ header {
             }
         }
         button{
-            background:rgb(13, 107, 107) ;
+            background:$teal-color ;
             border: none;
-            color:white;
+            color:$white-color;
             padding: 10px 20px;
             border-radius: 15px;
             margin-top: 50px;
@@ -90,12 +100,27 @@ header {
     
         }
     }
+    @include device-Screen("tablate"){
+        .header-right{
+            flex: 2;
+            margin-top: -150px;
+            img{
+                width: 500px;
+                height: 450px;
+            }
+        }
+    }
 
+}
+@include device-Screen("tablate"){
+    header{
+        height: 80vh;
+    }
+    
 }
 
 main {
-    display: flex;
-    flex-direction: column;
+    @include display-column;
     font-size: 20px;
 
     .food_product {
@@ -133,8 +158,8 @@ main {
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: white;
-    outline: 1px solid white;
+    background-color: $white-color;
+    outline: 1px solid $white-color;
 }
 
 .service {
@@ -165,7 +190,7 @@ main {
         margin-top: 330px;
 
         .card {
-            background: white;
+            background: $white-color;
             margin: 20px 0px;
             width: 22%;
             border-radius: 15px;
@@ -177,14 +202,28 @@ main {
             box-shadow: 0px 7px 10px rgba(black, 0.5)
         }
         @include device-Screen("desktop"){
-            padding-top: -20px;
+            .card{
+                padding-top: -20px;
+            }
            
+        }
+        @include device-Screen("tablate"){
+            .card{
+                 padding: 5px;
+                 
+            }
         }
     }
      @include device-Screen("desktop"){
         .group_cards{
             margin-left: 110px;
-            
+        }
+     }
+     @include device-Screen("tablate"){
+        .group_cards{
+            width: 90%;
+            margin-left: 43px;
+            margin-top: 310px;
 
         }
      }
@@ -244,15 +283,14 @@ main {
 
 .customer_comment {
     text-align: center;
-    color: white;
+    color: $white-color;
     background: rgb(19, 192, 226);
     width: 55%;
     height: 45vh;
     padding: 40px;
     margin-left: 300px;
     border-radius: 15px;
-    display: flex;
-    flex-direction: column;
+    @include display-column;
     gap: 10px;
     #email,
     #comment{
@@ -273,7 +311,7 @@ main {
     }
     #submit{
         width: 20%;
-        color: white;
+        color: $white-color;
         font-weight: bold;
         padding: 5px 10px;
         border: 1px solid rgb(21, 160, 189);
@@ -286,10 +324,20 @@ main {
             margin-left: 370px;
         }
     }
-
+    @include device-Screen("tablate"){
+        #submit{
+            margin-left: 420px;
+        }
+    }
 }
 @include device-Screen("desktop"){
     .customer_comment {
         margin-left: 250px;
     }
 } 
+@include device-Screen("tablate"){
+    .customer_comment {
+        width: 75%;
+        margin-left: 110px;
+    }
+}

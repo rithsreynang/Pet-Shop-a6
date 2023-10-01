@@ -9,7 +9,7 @@ nav {
     overflow: hidden;
     transition: 0.4s;
     z-index: 99;
-    background-color: rgb(255, 255, 255);
+    background-color:$white-color;
     border-bottom: 0.5px solid teal;
 
     .nav-right {
@@ -26,7 +26,7 @@ nav {
             }
         }
 
-        @include device-Screen("tablate") {
+        @include device-Screen("tablet") {
             img {
                 margin-top: -20px;
                 height: 115px;
@@ -67,7 +67,7 @@ nav {
         }
         
 
-        @include device-Screen("tablate") {
+        @include device-Screen("tablet") {
             h4 {
                 font-size: 15px;
             }
