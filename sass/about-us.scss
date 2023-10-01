@@ -24,6 +24,12 @@ header {
     }
   }
 
+  @include device-Screen("tablet") {
+    .bg {
+      font-size: 13px;
+      height: 45vh;
+    }
+  }
 
   @include device-Screen("phone") {
     .bg {
@@ -36,17 +42,6 @@ header {
   header {
     height: 90vh;
     padding-top: 150px;
-  }
-}
-
-@include device-Screen("tablet") {
-  header {
-    height: 80vh;
-
-    .bg {
-      font-size: 15px;
-      height: 45vh;
-    }
   }
 }
 
@@ -63,7 +58,6 @@ main {
     text-align: justify;
     height: auto;
     padding: 20px;
-    margin-top: 80px;
     border: 1px solid rgb(21, 160, 189);
     border-radius: 20px;
     margin: 30px;
@@ -75,6 +69,19 @@ main {
       img {
         border-radius: 10px;
         margin-top: 10px;
+      }
+
+      @include device-Screen("phone") {
+        img {
+          height: 200px;
+          width: 200px;
+        }
+      }
+    }
+
+    @include device-Screen("phone") {
+      .mission-left {
+        margin-left: 0px;
       }
     }
 
@@ -91,7 +98,14 @@ main {
 
     @include device-Screen("tablet") {
       .mission-right {
-        font-size: 15px;
+        font-size: 18px;
+      }
+    }
+
+    @include device-Screen("phone") {
+      .mission-right {
+        font-size: 12px;
+        padding-right: 0px;
       }
     }
   }
@@ -112,7 +126,6 @@ main {
   h2 {
     text-align: center;
     margin: 35px 0px 0px 0px;
-
   }
 
   .value {
@@ -122,27 +135,43 @@ main {
     justify-content: center;
 
     .pet {
-
       p {
-        margin: 0px 30px;
+        margin: 0px 20px;
+      }
+
+      @include device-Screen("tablet") {
+        p {
+          margin: 0px 15px;
+          font-size: 13px;
+        }
+      }
+
+      @include device-Screen("phone") {
+        p {
+          margin: 0px 10px;
+          font-size: 10px;
+        }
       }
 
       @include device-Screen("desktop") {
         img {
-          height: 60px;
-          width: 65px;
+          height: 50px;
+          width: 55px;
           margin-left: -20px;
         }
+      }
 
-        p {
-          margin: 0px 15px;
+      @include device-Screen("tablet") {
+        img {
+          height: 40px;
+          width: 45px;
         }
       }
 
       @include device-Screen("phone") {
         img {
-          height: 40px;
-          width: 45px;
+          height: 30px;
+          width: 35px;
         }
       }
     }
@@ -153,7 +182,6 @@ main {
       border: 1px solid rgb(21, 160, 189);
       border-radius: 20px;
       padding: 10px;
-
     }
   }
 }
@@ -175,11 +203,6 @@ main {
       margin: 60px 0px 30px 0px;
     }
 
-    p {
-      margin: 10px 20px 20px 20px;
-      text-align: justify;
-    }
-
     @include device-Screen("desktop") {
       img {
         height: 200px;
@@ -189,15 +212,37 @@ main {
 
     @include device-Screen("tablet") {
       img {
-        margin-top: 30px;
+        margin-top: 20px;
       }
+    }
 
+    @include device-Screen("phone") {
+      img {
+        height: 120px;
+        width: 120px;
+        margin: 20px 0px 10px 0px;
+      }
+    }
+    p {
+      margin: 10px 20px 20px 20px;
+      text-align: justify;
+    }
+
+    @include device-Screen("phone") {
       p {
-        font-size: $fond-size;
+        margin: 10px;
+        font-size: 8px;
       }
     }
   }
+
+  @include device-Screen("tablet") {
+    .card-i {
+      font-size: 12px;
+    }
+  }
 }
+
 .text {
   padding: 30px 100px 30px 100px;
   font-size: 16px;
@@ -207,7 +252,22 @@ main {
     text-align: center;
     margin-bottom: 10px;
   }
+
+  @include device-Screen("phone") {
+    p {
+      text-align: justify;
+      font-size: 13px;
+    }
+  }
 }
+
+@include device-Screen("phone") {
+  .text {
+    padding: 20px 30px 20px 30px;
+  }
+
+}
+
 .background {
   display: flex;
   justify-content: space-evenly;
@@ -226,6 +286,14 @@ main {
     img {
       width: 150px;
       height: 160px;
+    }
+  }
+
+  @include device-Screen("phone") {
+    img {
+      width: 110px;
+      height: 110px;
+
     }
   }
 }
