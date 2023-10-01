@@ -291,6 +291,16 @@ nav .nav-left .material-icons {
     padding: 5px;
   }
 }
+@media screen and (max-width: 820px) {
+  .shopping .card button,
+  .newarrival .card button,
+  .shopebypets .card button,
+  .newproducdselling .card button {
+    width: 80%;
+    padding: 5px;
+    margin-left: 23px;
+  }
+}
 .shopping .card h3,
 .newarrival .card h3,
 .shopebypets .card h3,
