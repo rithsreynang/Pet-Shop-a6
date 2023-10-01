@@ -65,8 +65,15 @@ footer {
                         margin: 2px;
                     }
                 }
+                @include device-Screen("phone"){
+                    li{
+                        font-size: 13.5px;
+                        margin: 2px;
+                    }
+                }
 
             }
+            
 
             li:hover {
                 color: $teal-color;
@@ -92,6 +99,11 @@ footer {
                 color: $teal-color;
             }
         }
+        @include device-Screen("phone"){
+            .contact-us{
+                margin-right: 20px;
+            }
+        }
     }
 
     @include device-Screen("tablet") {
@@ -99,6 +111,12 @@ footer {
             margin-left: -450px;
             font-size: 18px;
             margin-top: -30px;
+        }
+    }
+    @include device-Screen("phone"){
+        .footer_top{
+            font-size: 16.5px;
+            margin-left: -370px;
         }
     }
 
