@@ -101,13 +101,13 @@ nav .nav-left .material-icons {
 }
 @media screen and (max-width: 600px) {
   nav .nav-left .material-icons {
-    font-size: 28px;
+    font-size: 20px;
   }
 }
 @media screen and (max-width: 600px) {
   nav .nav-left {
     gap: 25px;
-    margin-right: 40px;
+    margin-right: 30px;
   }
 }
 
