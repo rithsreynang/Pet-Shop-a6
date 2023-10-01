@@ -55,6 +55,12 @@ footer {
                 li {
                     margin: 5px;
                 }
+                @include device-Screen("tablet") {
+                    li{
+                        font-size: 15px;
+                        margin: 2px;
+                    }
+                }
 
             }
 
@@ -82,6 +88,13 @@ footer {
                 color: teal;
             }
         }
+    }
+    @include device-Screen("tablet") {
+       .footer_top{
+            margin-left: -450px;
+            font-size: 18px;
+            margin-top: -30px;
+       }
     }
 
 }
