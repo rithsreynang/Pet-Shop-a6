@@ -636,7 +636,6 @@ main .mission {
   border: 1px solid rgb(21, 160, 189);
   border-radius: 20px;
   margin: 30px;
-  margin-top: 180px;
 }
 main .mission .mission-left {
   flex: 1;
@@ -658,6 +657,25 @@ main .mission .mission-right h2 {
 @media screen and (max-width: 820px) {
   main .mission .mission-right {
     font-size: 15px;
+  }
+}
+@media screen and (max-width: 600px) {
+  main .mission {
+    margin-top: 50px;
+  }
+  main .mission .mission-right {
+    font-size: 12px;
+    padding-right: 15px;
+  }
+  main .mission .mission-right h2 {
+    padding-bottom: 15px;
+  }
+  main .mission .mission-left {
+    margin-left: 15px;
+  }
+  main .mission .mission-left img {
+    width: 200px;
+    height: 200px;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -690,6 +708,12 @@ main .value .pet p {
   }
   main .value .pet p {
     margin: 0px 15px;
+  }
+}
+@media screen and (max-width: 600px) {
+  main .value .pet img {
+    height: 40px;
+    width: 45px;
   }
 }
 main .value .pet:hover {
@@ -735,13 +759,16 @@ main .value .pet:hover {
   }
 }
 @media screen and (max-width: 600px) {
+  .team .card-i {
+    font-size: 10px;
+  }
   .team .card-i img {
     height: 100px;
     width: 100px;
     margin: 20px 0px 10px 0px;
   }
   .team .card-i p {
-    font-size: 10px;
+    font-size: 8px;
     margin: 10px;
   }
 }
@@ -756,6 +783,16 @@ main .value .pet:hover {
   margin-bottom: 10px;
 }
 
+@media screen and (max-width: 600px) {
+  .text {
+    padding: 20px 50px 20px 50px;
+    margin: 0px;
+    font-size: 15px;
+  }
+  .text p {
+    text-align: justify;
+  }
+}
 .background {
   display: flex;
   justify-content: space-evenly;
