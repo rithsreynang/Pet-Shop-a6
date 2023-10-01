@@ -6,86 +6,130 @@ header {
     color: rgb(12, 54, 62);
     padding-top: 100px;
     display: flex;
-    .header-left{
+
+    .header-left {
         flex: 2;
-        margin-left: 80px;
         text-align: center;
-        margin-top: 90px;
-        h2{
-            font-size: 50px;
-            color:rgb(13, 107, 107);
+
+        margin: {
+            top: 90px;
+            left: 80px;
         }
+
+        ;
+
+        h2 {
+            font-size: 50px;
+            color: rgb(13, 107, 107);
+        }
+
         @include device-Screen("desktop") {
-            h2{
+            h2 {
                 font-size: 35px;
             }
         }
-        @include device-Screen("tablet"){
-            h2{
+
+        @include device-Screen("tablet") {
+            h2 {
                 font-size: 30px;
+            }
+        }
+        @include device-Screen("phone"){
+            h2{
+                font-size: 23px;
             }
         }
         h5{
             font-size: 23px;
-            color:$white-color;
+            color: $white-color;
             margin: 5px;
         }
-        @include device-Screen("desktop"){
-            h5{
+
+        @include device-Screen("desktop") {
+            h5 {
                 font-size: 19px;
+            }
+        }
+        @include device-Screen("phone"){
+            h5{
+                font-size: 17px;
             }
         }
         p{
             font-size: 18px;
             font-weight: bold;
             color: $white-color;
-            text-align:center;
-            span{
+            text-align: center;
+
+            span {
                 font-size: 40px;
                 margin: 10px;
-                color:rgb(13, 107, 107);
+                color: rgb(13, 107, 107);
             }
-            @include device-Screen("desktop"){
-                span{
+
+            @include device-Screen("desktop") {
+                span {
                     font-size: 30px;
                     margin: 5px;
                 }
             }
-            @include device-Screen("tablet"){
-                span{
+
+            @include device-Screen("tablet") {
+                span {
                     font-size: 30px;
                 }
             }
         }
-        @include device-Screen("desktop"){
-            p{
+
+        @include device-Screen("desktop") {
+            p {
                 font-size: 14px;
+            }
+        }
+        @include device-Screen("phone"){
+            p{
+                font-size: 13px;
             }
         }
         button{
             background:$teal-color ;
             border: none;
-            color:$white-color;
+            color: $white-color;
             padding: 10px 20px;
             border-radius: 15px;
             margin-top: 50px;
             font-weight: bold;
         }
-        @include device-Screen("desktop"){
-            button{
+
+        @include device-Screen("desktop") {
+            button {
                 padding: 5px 10px;
                 border-radius: 8px;
                 margin-top: 30px;
             }
-        }
-
-        
+        } 
+        @include device-Screen("phone"){
+            button{
+                margin-top: 10px;
+                font-size: 10px;
+            }
+        }     
     }
-    @include device-Screen("desktop"){
-        .header-left{
+
+    @include device-Screen("desktop") {
+        .header-left {
             flex: 3;
-            margin-left: 50px;
-            margin-top: 110px;
+            margin {
+                left: 50px;
+                top: 110px;
+            }
+        }
+    }
+    @include device-Screen("phone"){
+        .header-left{
+           flex: 4;
+           margin-top: 20px;
+           margin-left: 15px;
         }
     }
     .header-right{
@@ -93,32 +137,50 @@ header {
         margin-top: -120px;
 
     }
-    @include device-Screen("desktop"){
-        .header-right{
-            flex:1.5;
+
+    @include device-Screen("desktop") {
+        .header-right {
+            flex: 1.5;
             margin-top: -150px;
-    
+
         }
     }
-    @include device-Screen("tablet"){
-        .header-right{
+
+    @include device-Screen("tablet") {
+        .header-right {
             flex: 2;
             margin-top: -100px;
-            img{
+            img {
                 width: 500px;
                 height: 450px;
+                margin-top: 35px;
+            }
+        }
+    }
+    @include device-Screen("phone"){
+        .header-right{
+            flex: 2;
+            img{
+                width: 350px;
+                height: 300px;
+                // margin-left: 120px;
             }
         }
     }
 
 }
-@include device-Screen("tablet"){
-    header{
+
+@include device-Screen("tablet") {
+    header {
         height: 85vh;
     }
-    
-}
 
+}
+@include device-Screen("phone"){
+    header{
+        height: 60vh;
+    }
+}
 main {
     @include display-column;
     font-size: 20px;
@@ -130,6 +192,11 @@ main {
 
         p {
             margin-top: 10px;
+        }
+    }
+    @include device-Screen("phone"){
+        .food_product{
+            font-size: 14px;
         }
     }
 
@@ -169,7 +236,18 @@ main {
     p {
         font-size: 18px;
     }
-        
+    @include device-Screen("phone"){
+        p{
+            font-size: 15px;
+        }
+    }
+    
+    
+}
+@include device-Screen("phone"){
+      .service{
+        font-size: 20px;
+      }  
 }
 
 .service_cards {
@@ -197,38 +275,74 @@ main {
             text-align: center;
             padding-top: 20px;
         }
-        .card:hover{
+
+        .card:hover {
             transform: scale(1.05);
             box-shadow: 0px 7px 10px rgba(black, 0.5)
         }
-        @include device-Screen("desktop"){
-            .card{
+
+        @include device-Screen("desktop") {
+            .card {
                 padding-top: -20px;
             }
-           
+
         }
-        @include device-Screen("tablet"){
-            .card{
+
+        @include device-Screen("tablet") {
+            .card {
                 width: 25%;
                 padding: 5px;
                 margin: 16px 15px;
-                 
+
+            }
+        }
+        @include device-Screen("phone"){
+            .card{
+                width: 30%;
+                font-size: 15px;
+                height: 23vh;
+                border-radius: 10px;
+                gap: 10px;
+
+                img{
+                    width: 70px;
+                    height: 70px;
+                }
+
             }
         }
     }
-     @include device-Screen("desktop"){
-        .group_cards{
+
+    @include device-Screen("desktop") {
+        .group_cards {
             margin-left: 110px;
         }
-     }
-    @include device-Screen("tablet"){
-        .group_cards{
+    }
+
+    @include device-Screen("tablet") {
+        .group_cards {
             width: 95%;
+            height: 30vh;
             margin-left: 20px;
             margin-top: 310px;
+            justify-content: flex-start;
+            
 
         }
-     }
+    }
+    @include device-Screen("phone"){
+        .group_cards{
+            width: 90%;
+            margin-top: 200px;
+            margin-left: 30px;
+        }
+    }
+}
+@include device-Screen("phone"){
+     .service_cards{
+        height: 55vh;
+        margin-top: -10px;
+     }   
 }
 
 .comment {
@@ -260,11 +374,24 @@ main {
                 img {
                     border-radius: 50px;
                 }
+                @include device-Screen("phone"){
+                    img{
+                        width: 40px;
+                        height: 40px;
+                        margin-top: -15px;
+                    }
+                }
 
                 .acc {
                     text-align: start;
                     font-size: 18px;
                     padding-top: 3px;
+                }
+                @include device-Screen("phone"){
+                    .acc{
+                        font-size: 15px;
+                        margin-top: -20px;
+                    }
                 }
 
             }
@@ -273,14 +400,36 @@ main {
                 margin: 10px;
 
             }
+            @include device-Screen("phone"){
+                .card-down{
+                    font-size: 12px;
+                    margin-top: -10px;
+                }
+            }
         }
-        @include device-Screen("desktop"){
+
+        @include device-Screen("desktop") {
+            .card:nth-last-child(3) {
+                display: none;
+            }
+        }
+        @include device-Screen("phone"){
+            .card{
+                height: 25vh;
+                width: 40%;
+                
+            }
             .card:nth-last-child(3){
                 display: none;
             }
         }
     }
 
+}
+@include device-Screen("phone"){
+    .comment{
+        margin-top: 120px;
+    }
 }
 
 .customer_comment {
@@ -294,8 +443,9 @@ main {
     border-radius: 15px;
     @include display-column;
     gap: 10px;
+
     #email,
-    #comment{
+    #comment {
         outline: 0;
         margin: 10px;
         padding: 8px;
@@ -304,14 +454,17 @@ main {
         margin-left: 60px;
 
     }
-    @include device-Screen("desktop"){
+
+    @include device-Screen("desktop") {
+
         #email,
-        #comment{
+        #comment {
             margin-left: 20px;
             margin: 5px;
         }
     }
-    #submit{
+
+    #submit {
         width: 20%;
         color: $white-color;
         font-weight: bold;
@@ -319,27 +472,44 @@ main {
         border: 1px solid rgb(21, 160, 189);
         border-radius: 10px;
         margin-left: 450px;
-        background:rgb(4, 141, 4);
+        background: rgb(4, 141, 4);
     }
-    @include device-Screen("desktop"){
-        #submit{
+
+    @include device-Screen("desktop") {
+        #submit {
             margin-left: 370px;
         }
     }
-    @include device-Screen("tablet"){
-        #submit{
+
+    @include device-Screen("tablet") {
+        #submit {
             margin-left: 420px;
         }
     }
+    @include device-Screen("phone"){
+        #submit{
+            margin-left: 155px;
+            width: 40%;
+        }
+    }
 }
-@include device-Screen("desktop"){
+
+@include device-Screen("desktop") {
     .customer_comment {
         margin-left: 250px;
     }
-} 
-@include device-Screen("tablet"){
+}
+
+@include device-Screen("tablet") {
     .customer_comment {
         width: 75%;
         margin-left: 110px;
+    }
+}
+@include device-Screen("phone"){
+    .customer_comment {
+        width: 100%;
+       margin-left: 0px;
+       border-radius: 0px;
     }
 }
