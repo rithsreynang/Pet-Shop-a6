@@ -31,7 +31,7 @@ nav .nav-right img {
     width: 120px;
   }
 }
-@media screen and (max-width:1024px) {
+@media screen and (max-width: ) {
   nav .nav-right img {
     margin-top: -20px;
     height: 115px;
@@ -63,7 +63,7 @@ nav .nav-center h4 {
     font-size: 17px;
   }
 }
-@media screen and (max-width:1024px ) {
+@media screen and (max-width: ) {
   nav .nav-center h4 {
     font-size: 15px;
   }
@@ -233,7 +233,7 @@ nav .nav-left .material-icons {
     padding: 3px;
   }
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: ) {
   .shopping .card button p,
   .newarrival .card button p,
   .shopebypets .card button p,
@@ -263,7 +263,7 @@ nav .nav-left .material-icons {
     font-size: 16px;
   }
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: ) {
   .shopping .card button i,
   .newarrival .card button i,
   .shopebypets .card button i,
@@ -490,7 +490,7 @@ footer .footer_top .logo_shop h5 {
     text-align: justify;
   }
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 820px) {
   footer .footer_top .logo_shop img,
   footer .footer_top .logo_shop h5 {
     display: none;
@@ -513,6 +513,13 @@ footer .footer_top .our-service ul li,
 footer .footer_top .our-story ul li {
   margin: 5px;
 }
+@media screen and (max-width: 820px) {
+  footer .footer_top .our-service ul li,
+  footer .footer_top .our-story ul li {
+    font-size: 15px;
+    margin: 2px;
+  }
+}
 footer .footer_top .our-service li:hover,
 footer .footer_top .our-story li:hover {
   color: teal;
@@ -533,6 +540,13 @@ footer .footer_top .contact-us .call:hover,
 footer .footer_top .contact-us .email:hover,
 footer .footer_top .contact-us .page:hover {
   color: teal;
+}
+@media screen and (max-width: 820px) {
+  footer .footer_top {
+    margin-left: -450px;
+    font-size: 18px;
+    margin-top: -30px;
+  }
 }
 
 .footer-down {

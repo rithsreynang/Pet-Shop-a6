@@ -490,7 +490,7 @@ footer .footer_top .logo_shop h5 {
     text-align: justify;
   }
 }
-@media screen and (max-width: ) {
+@media screen and (max-width: 820px) {
   footer .footer_top .logo_shop img,
   footer .footer_top .logo_shop h5 {
     display: none;
@@ -513,6 +513,13 @@ footer .footer_top .our-service ul li,
 footer .footer_top .our-story ul li {
   margin: 5px;
 }
+@media screen and (max-width: 820px) {
+  footer .footer_top .our-service ul li,
+  footer .footer_top .our-story ul li {
+    font-size: 15px;
+    margin: 2px;
+  }
+}
 footer .footer_top .our-service li:hover,
 footer .footer_top .our-story li:hover {
   color: teal;
@@ -533,6 +540,13 @@ footer .footer_top .contact-us .call:hover,
 footer .footer_top .contact-us .email:hover,
 footer .footer_top .contact-us .page:hover {
   color: teal;
+}
+@media screen and (max-width: 820px) {
+  footer .footer_top {
+    margin-left: -450px;
+    font-size: 18px;
+    margin-top: -30px;
+  }
 }
 
 .footer-down {
@@ -576,7 +590,7 @@ header .header-left h2 {
     font-size: 35px;
   }
 }
-@media screen and (max-width: ) {
+@media screen and (max-width: 820px) {
   header .header-left h2 {
     font-size: 30px;
   }
@@ -608,7 +622,7 @@ header .header-left p span {
     margin: 5px;
   }
 }
-@media screen and (max-width: ) {
+@media screen and (max-width: 820px) {
   header .header-left p span {
     font-size: 30px;
   }
@@ -651,10 +665,10 @@ header .header-right {
     margin-top: -150px;
   }
 }
-@media screen and (max-width: ) {
+@media screen and (max-width: 820px) {
   header .header-right {
     flex: 2;
-    margin-top: -150px;
+    margin-top: -100px;
   }
   header .header-right img {
     width: 500px;
@@ -662,9 +676,9 @@ header .header-right {
   }
 }
 
-@media screen and (max-width: ) {
+@media screen and (max-width: 820px) {
   header {
-    height: 80vh;
+    height: 85vh;
   }
 }
 main {
@@ -967,9 +981,11 @@ main .price span {
     padding-top: -20px;
   }
 }
-@media screen and (max-width: ) {
+@media screen and (max-width: 820px) {
   .service_cards .group_cards .card {
+    width: 25%;
     padding: 5px;
+    margin: 16px 15px;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -977,10 +993,10 @@ main .price span {
     margin-left: 110px;
   }
 }
-@media screen and (max-width: ) {
+@media screen and (max-width: 820px) {
   .service_cards .group_cards {
-    width: 90%;
-    margin-left: 43px;
+    width: 95%;
+    margin-left: 20px;
     margin-top: 310px;
   }
 }
@@ -1069,7 +1085,7 @@ main .price span {
     margin-left: 370px;
   }
 }
-@media screen and (max-width: ) {
+@media screen and (max-width: 820px) {
   .customer_comment #submit {
     margin-left: 420px;
   }
@@ -1080,7 +1096,7 @@ main .price span {
     margin-left: 250px;
   }
 }
-@media screen and (max-width: ) {
+@media screen and (max-width: 820px) {
   .customer_comment {
     width: 75%;
     margin-left: 110px;
