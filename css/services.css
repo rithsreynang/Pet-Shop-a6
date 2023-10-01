@@ -372,6 +372,12 @@ footer .footer_top .logo_shop h5 {
     text-align: justify;
   }
 }
+@media screen and (max-width: 820px) {
+  footer .footer_top .logo_shop img,
+  footer .footer_top .logo_shop h5 {
+    display: none;
+  }
+}
 footer .footer_top .logo_shop h5:hover {
   color: teal;
 }
@@ -410,7 +416,8 @@ footer .footer_top .contact-us .email:hover,
 footer .footer_top .contact-us .page:hover {
   color: teal;
 }
-footer .footer-down {
+
+.footer-down {
   background: teal;
   height: 10vh;
   display: flex;
@@ -418,14 +425,14 @@ footer .footer-down {
   align-items: center;
   gap: 15px;
 }
-footer .footer-down a {
+.footer-down a {
   color: rgb(0, 0, 0);
 }
-footer .footer-down a:hover {
+.footer-down a:hover {
   color: rgb(255, 255, 255);
   text-decoration: underline;
 }
-footer .footer-down a:hover a {
+.footer-down a:hover a {
   color: white;
 }
 
@@ -451,6 +458,11 @@ header .header-left h2 {
     font-size: 35px;
   }
 }
+@media screen and (max-width: 820px) {
+  header .header-left h2 {
+    font-size: 30px;
+  }
+}
 header .header-left h5 {
   font-size: 23px;
   color: white;
@@ -474,8 +486,13 @@ header .header-left p span {
 }
 @media screen and (max-width: 1024px) {
   header .header-left p span {
-    font-size: 25px;
+    font-size: 30px;
     margin: 5px;
+  }
+}
+@media screen and (max-width: 820px) {
+  header .header-left p span {
+    font-size: 30px;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -516,7 +533,22 @@ header .header-right {
     margin-top: -150px;
   }
 }
+@media screen and (max-width: 820px) {
+  header .header-right {
+    flex: 2;
+    margin-top: -150px;
+  }
+  header .header-right img {
+    width: 500px;
+    height: 450px;
+  }
+}
 
+@media screen and (max-width: 820px) {
+  header {
+    height: 80vh;
+  }
+}
 main {
   display: flex;
   flex-direction: column;
@@ -761,13 +793,25 @@ main .price span {
   box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
 }
 @media screen and (max-width: 1024px) {
-  .service_cards .group_cards {
+  .service_cards .group_cards .card {
     padding-top: -20px;
+  }
+}
+@media screen and (max-width: 820px) {
+  .service_cards .group_cards .card {
+    padding: 5px;
   }
 }
 @media screen and (max-width: 1024px) {
   .service_cards .group_cards {
     margin-left: 110px;
+  }
+}
+@media screen and (max-width: 820px) {
+  .service_cards .group_cards {
+    width: 90%;
+    margin-left: 43px;
+    margin-top: 310px;
   }
 }
 
@@ -855,9 +899,20 @@ main .price span {
     margin-left: 370px;
   }
 }
+@media screen and (max-width: 820px) {
+  .customer_comment #submit {
+    margin-left: 420px;
+  }
+}
 
 @media screen and (max-width: 1024px) {
   .customer_comment {
     margin-left: 250px;
+  }
+}
+@media screen and (max-width: 820px) {
+  .customer_comment {
+    width: 75%;
+    margin-left: 110px;
   }
 }/*# sourceMappingURL=services.css.map */

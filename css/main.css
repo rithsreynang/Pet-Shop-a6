@@ -372,6 +372,12 @@ footer .footer_top .logo_shop h5 {
     text-align: justify;
   }
 }
+@media screen and (max-width: 820px) {
+  footer .footer_top .logo_shop img,
+  footer .footer_top .logo_shop h5 {
+    display: none;
+  }
+}
 footer .footer_top .logo_shop h5:hover {
   color: teal;
 }
@@ -410,7 +416,8 @@ footer .footer_top .contact-us .email:hover,
 footer .footer_top .contact-us .page:hover {
   color: teal;
 }
-footer .footer-down {
+
+.footer-down {
   background: teal;
   height: 10vh;
   display: flex;
@@ -418,13 +425,13 @@ footer .footer-down {
   align-items: center;
   gap: 15px;
 }
-footer .footer-down a {
+.footer-down a {
   color: rgb(0, 0, 0);
 }
-footer .footer-down a:hover {
+.footer-down a:hover {
   color: rgb(255, 255, 255);
   text-decoration: underline;
 }
-footer .footer-down a:hover a {
+.footer-down a:hover a {
   color: white;
 }/*# sourceMappingURL=main.css.map */

@@ -22,14 +22,24 @@ footer {
             h5 {
                 padding-left: -40px;
             }
+
             @include device-Screen("desktop") {
-                h5{
-                    margin:-30px 20px 30px -20px;
+                h5 {
+                    margin: -30px 20px 30px -20px;
                     text-align: justify;
                 }
-                
+
             }
-            h5:hover{
+
+            @include device-Screen("tablate") {
+
+                img,
+                h5 {
+                    display: none;
+                }
+            }
+
+            h5:hover {
                 color: teal;
             }
         }
@@ -48,10 +58,11 @@ footer {
                 }
 
             }
-                li:hover{
+
+            li:hover {
                 color: teal;
                 text-decoration: underline;
-                }
+            }
         }
 
         .contact-us {
@@ -65,31 +76,34 @@ footer {
                 display: flex;
                 gap: 10px;
             }
+
             .call:hover,
             .email:hover,
-            .page:hover{
+            .page:hover {
                 color: teal;
             }
         }
     }
+}
 
-    .footer-down {
-        background: teal;
-        height: 10vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 15px;
-        a{
-            color: rgb(0, 0, 0);
-        }
-        a:hover{
-            color: rgb(255, 255, 255);
-            text-decoration: underline;
+.footer-down {
+    background: teal;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+    a {
+        color: rgb(0, 0, 0);
+    }
+
+    a:hover {
+        color: rgb(255, 255, 255);
+        text-decoration: underline;
 
         a {
             color: white;
         }
     }
-}
 }
