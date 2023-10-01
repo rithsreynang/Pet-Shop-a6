@@ -25,6 +25,11 @@ header {
                 font-size: 30px;
             }
         }
+        @include device-Screen("phone"){
+            h2{
+                font-size: 23px;
+            }
+        }
         h5{
             font-size: 23px;
             color:$white-color;
@@ -33,6 +38,11 @@ header {
         @include device-Screen("desktop"){
             h5{
                 font-size: 19px;
+            }
+        }
+        @include device-Screen("phone"){
+            h5{
+                font-size: 17px;
             }
         }
         p{
@@ -62,6 +72,11 @@ header {
                 font-size: 14px;
             }
         }
+        @include device-Screen("phone"){
+            p{
+                font-size: 13px;
+            }
+        }
         button{
             background:$teal-color ;
             border: none;
@@ -77,15 +92,26 @@ header {
                 border-radius: 8px;
                 margin-top: 30px;
             }
-        }
-
-        
+        } 
+        @include device-Screen("phone"){
+            button{
+                margin-top: 10px;
+                font-size: 10px;
+            }
+        }     
     }
     @include device-Screen("desktop"){
         .header-left{
             flex: 3;
             margin-left: 50px;
             margin-top: 110px;
+        }
+    }
+    @include device-Screen("phone"){
+        .header-left{
+           flex: 4;
+           margin-top: 20px;
+           margin-left: 15px;
         }
     }
     .header-right{
@@ -107,6 +133,17 @@ header {
             img{
                 width: 500px;
                 height: 450px;
+                margin-top: 35px;
+            }
+        }
+    }
+    @include device-Screen("phone"){
+        .header-right{
+            flex: 2;
+            img{
+                width: 350px;
+                height: 300px;
+                // margin-left: 120px;
             }
         }
     }
@@ -118,7 +155,11 @@ header {
     }
     
 }
-
+@include device-Screen("phone"){
+    header{
+        height: 60vh;
+    }
+}
 main {
     @include display-column;
     font-size: 20px;
@@ -130,6 +171,11 @@ main {
 
         p {
             margin-top: 10px;
+        }
+    }
+    @include device-Screen("phone"){
+        .food_product{
+            font-size: 14px;
         }
     }
 
@@ -169,7 +215,18 @@ main {
     p {
         font-size: 18px;
     }
-        
+    @include device-Screen("phone"){
+        p{
+            font-size: 15px;
+        }
+    }
+    
+    
+}
+@include device-Screen("phone"){
+      .service{
+        font-size: 20px;
+      }  
 }
 
 .service_cards {
@@ -215,6 +272,21 @@ main {
                  
             }
         }
+        @include device-Screen("phone"){
+            .card{
+                width: 30%;
+                font-size: 15px;
+                height: 23vh;
+                border-radius: 10px;
+                gap: 10px;
+
+                img{
+                    width: 70px;
+                    height: 70px;
+                }
+
+            }
+        }
     }
      @include device-Screen("desktop"){
         .group_cards{
@@ -224,11 +296,27 @@ main {
     @include device-Screen("tablet"){
         .group_cards{
             width: 95%;
+            height: 30vh;
             margin-left: 20px;
             margin-top: 310px;
+            justify-content: flex-start;
+            
 
         }
-     }
+    }
+    @include device-Screen("phone"){
+        .group_cards{
+            width: 90%;
+            margin-top: 200px;
+            margin-left: 30px;
+        }
+    }
+}
+@include device-Screen("phone"){
+     .service_cards{
+        height: 55vh;
+        margin-top: -10px;
+     }   
 }
 
 .comment {
@@ -260,11 +348,24 @@ main {
                 img {
                     border-radius: 50px;
                 }
+                @include device-Screen("phone"){
+                    img{
+                        width: 40px;
+                        height: 40px;
+                        margin-top: -15px;
+                    }
+                }
 
                 .acc {
                     text-align: start;
                     font-size: 18px;
                     padding-top: 3px;
+                }
+                @include device-Screen("phone"){
+                    .acc{
+                        font-size: 15px;
+                        margin-top: -20px;
+                    }
                 }
 
             }
@@ -273,14 +374,35 @@ main {
                 margin: 10px;
 
             }
+            @include device-Screen("phone"){
+                .card-down{
+                    font-size: 12px;
+                    margin-top: -10px;
+                }
+            }
         }
         @include device-Screen("desktop"){
             .card:nth-last-child(3){
                 display: none;
             }
         }
+        @include device-Screen("phone"){
+            .card{
+                height: 25vh;
+                width: 40%;
+                
+            }
+            .card:nth-last-child(3){
+                display: none;
+            }
+        }
     }
 
+}
+@include device-Screen("phone"){
+    .comment{
+        margin-top: 120px;
+    }
 }
 
 .customer_comment {
@@ -331,6 +453,12 @@ main {
             margin-left: 420px;
         }
     }
+    @include device-Screen("phone"){
+        #submit{
+            margin-left: 155px;
+            width: 40%;
+        }
+    }
 }
 @include device-Screen("desktop"){
     .customer_comment {
@@ -341,5 +469,12 @@ main {
     .customer_comment {
         width: 75%;
         margin-left: 110px;
+    }
+}
+@include device-Screen("phone"){
+    .customer_comment {
+        width: 100%;
+       margin-left: 0px;
+       border-radius: 0px;
     }
 }

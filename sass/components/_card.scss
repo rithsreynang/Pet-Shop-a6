@@ -18,6 +18,12 @@
             font-size: 25px;
         }
     }
+    @include device-Screen("phone"){
+        h2{
+            font-size: 20px;
+            margin-top: 30px;
+        }
+    }
 
     .group_cards,
     .group_card {
@@ -27,6 +33,7 @@
         overflow-x: scroll;
         overflow-y: hidden;
     }
+    
 
     .group_card::-webkit-scrollbar,
     .group_cards::-webkit-scrollbar {
@@ -51,6 +58,12 @@
                 width: 233px;
             }
         }
+        @include device-Screen("phone"){
+            img{
+                width: 220px;
+                height: 220px;
+            }
+        }
 
         .price {
             display: flex;
@@ -65,6 +78,11 @@
             margin: 40px;
             font-weight: bold;
             font-size: 18px;
+        }
+        @include device-Screen("phone"){
+            label{
+                font-size: 15px;
+            }
         }
 
         button {
@@ -96,6 +114,12 @@
                     font-size: 14px;
                 }
             }
+            @include device-Screen("phone"){
+                p{
+                    font-size: 9px;
+
+                }
+            }
 
             @include device-Screen("phone") {
                 p {
@@ -123,7 +147,8 @@
             @include device-Screen("phone") {
                 i {
                     font-size: 20px;
-                    margin-left: 20px;
+                    margin-left: 15px;
+                    margin-top: -3px;
                 }
             }
         }
@@ -135,6 +160,14 @@
                 padding: 5px;
             }
 
+        }
+        @include device-Screen("phone"){
+            button{
+                width: 80%;
+                margin-left: 20px;
+                margin-bottom: -5px;
+                
+            }
         }
 
         // @include device-Screen("tablate") {
@@ -158,6 +191,14 @@
             color: rgb(249, 165, 11);
 
         }
+        @include device-Screen("phone"){
+            .group_icons{
+                .material-icons{
+                    font-size: 17px;
+                }
+                
+            }
+        }
 
         .listnumber-card {
             display: flex;
@@ -179,6 +220,8 @@
     @include device-Screen("phone") {
         .card {
             gap: 20px;
+            font-size: 14px;
         }
     }
+    
 }
