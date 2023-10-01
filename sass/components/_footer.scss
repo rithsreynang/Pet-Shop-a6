@@ -1,9 +1,8 @@
-@import"../mixins/responsive";
-
 footer {
     background: rgba(0, 128, 128, 0.129);
     margin-top: 100px;
-    @include display-column;
+    display: flex;
+    flex-direction: column;
 
     .footer_top {
         display: flex;
@@ -20,19 +19,6 @@ footer {
 
             }
 
-            @include device-Screen("phone") {
-                img {
-                    margin-left: 0;
-                }
-            }
-
-            @include device-Screen("tablet") {
-                img {
-                    margin-top: 10px;
-                    margin-left: 40px;
-                }
-            }
-
             h5 {
                 padding-left: -40px;
             }
@@ -45,14 +31,15 @@ footer {
 
             }
 
-            h5:hover {
-                color: $teal-color;
+            @include device-Screen("tablet") {
+                img,
+                h5 {
+                    display: none;
+                }
             }
-        }
 
-        @include device-Screen("tablet") {
-            .logo_shop {
-                display: none;
+            h5:hover {
+                color: teal;
             }
         }
 
@@ -72,7 +59,7 @@ footer {
             }
 
             li:hover {
-                color: $teal-color;
+                color: teal;
                 text-decoration: underline;
             }
         }
@@ -92,42 +79,31 @@ footer {
             .call:hover,
             .email:hover,
             .page:hover {
-                color: $teal-color;
+                color: teal;
             }
         }
     }
 
-    @include device-Screen("tablet") {
-        .footer_top {
-            margin-left: 82px;
-        }
+}
+
+.footer-down {
+    background: teal;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+    a {
+        color: rgb(0, 0, 0);
     }
 
-    @include device-Screen("phone") {
-        .footer_top {
-            margin-left: 22px;
-        }
-    }
-
-    .footer-down {
-        background: $teal-color;
-        height: 10vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 15px;
+    a:hover {
+        color: rgb(255, 255, 255);
+        text-decoration: underline;
 
         a {
-            color: rgb(0, 0, 0);
-        }
-
-        a:hover {
-            color: $white-color;
-            text-decoration: underline;
-
-            a {
-                color: $white-color;
-            }
+            color: white;
         }
     }
 }

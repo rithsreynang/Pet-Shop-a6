@@ -31,7 +31,7 @@ nav .nav-right img {
     width: 120px;
   }
 }
-@media screen and (max-width: ) {
+@media screen and (max-width: 820px) {
   nav .nav-right img {
     margin-top: -20px;
     height: 115px;
@@ -233,7 +233,7 @@ nav .nav-left .material-icons {
     padding: 3px;
   }
 }
-@media screen and (max-width: ) {
+@media screen and (max-width: 820px) {
   .shopping .card button p,
   .newarrival .card button p,
   .shopebypets .card button p,
@@ -263,7 +263,7 @@ nav .nav-left .material-icons {
     font-size: 16px;
   }
 }
-@media screen and (max-width: ) {
+@media screen and (max-width: 820px) {
   .shopping .card button i,
   .newarrival .card button i,
   .shopebypets .card button i,
@@ -481,17 +481,6 @@ footer .footer_top .logo_shop img {
   margin-top: -10px;
   margin-left: 80px;
 }
-@media screen and (max-width: 600px) {
-  footer .footer_top .logo_shop img {
-    margin-left: 0;
-  }
-}
-@media screen and (max-width: 820px) {
-  footer .footer_top .logo_shop img {
-    margin-top: 10px;
-    margin-left: 40px;
-  }
-}
 footer .footer_top .logo_shop h5 {
   padding-left: -40px;
 }
@@ -501,13 +490,14 @@ footer .footer_top .logo_shop h5 {
     text-align: justify;
   }
 }
-footer .footer_top .logo_shop h5:hover {
-  color: teal;
-}
 @media screen and (max-width: 820px) {
-  footer .footer_top .logo_shop {
+  footer .footer_top .logo_shop img,
+  footer .footer_top .logo_shop h5 {
     display: none;
   }
+}
+footer .footer_top .logo_shop h5:hover {
+  color: teal;
 }
 footer .footer_top .our-service,
 footer .footer_top .our-story {
@@ -544,17 +534,8 @@ footer .footer_top .contact-us .email:hover,
 footer .footer_top .contact-us .page:hover {
   color: teal;
 }
-@media screen and (max-width: 820px) {
-  footer .footer_top {
-    margin-left: 82px;
-  }
-}
-@media screen and (max-width: 600px) {
-  footer .footer_top {
-    margin-left: 22px;
-  }
-}
-footer .footer-down {
+
+.footer-down {
   background: teal;
   height: 10vh;
   display: flex;
@@ -562,14 +543,14 @@ footer .footer-down {
   align-items: center;
   gap: 15px;
 }
-footer .footer-down a {
+.footer-down a {
   color: rgb(0, 0, 0);
 }
-footer .footer-down a:hover {
-  color: white;
+.footer-down a:hover {
+  color: rgb(255, 255, 255);
   text-decoration: underline;
 }
-footer .footer-down a:hover a {
+.footer-down a:hover a {
   color: white;
 }
 

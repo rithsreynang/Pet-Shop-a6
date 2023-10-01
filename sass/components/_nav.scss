@@ -26,7 +26,7 @@ nav {
             }
         }
 
-        @include device-Screen("tablate") {
+        @include device-Screen("tablet") {
             img {
                 margin-top: -20px;
                 height: 115px;
