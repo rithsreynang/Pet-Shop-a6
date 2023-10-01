@@ -61,8 +61,6 @@ main {
     border: 1px solid rgb(21, 160, 189);
     border-radius: 20px;
     margin: 30px;
-    margin-top: 180px;
-
     .mission-left {
       flex: 1;
       margin-left: 30px;
@@ -72,24 +70,44 @@ main {
         margin-top: 10px;
       }
     }
-
+    
     .mission-right {
       flex: 2;
       padding: 10px;
       padding-right: 30px;
       font-size: 20px;
-
+      
       h2 {
         padding-bottom: 30px;
       }
     }
-
+    
     @include device-Screen("tablet") {
       .mission-right {
-
         font-size: 15px;
       }
     }
+  }
+  @include device-Screen("phone"){
+    .mission{
+      margin-top: 50px;
+      .mission-right{
+        font-size: 12px;
+        padding-right: 15px;
+        h2{
+          padding-bottom: 15px;
+        }
+      }
+      .mission-left{
+        margin-left: 15px;
+        img{
+          width: 200px;
+          height: 200px;
+  
+        }
+      }
+    }
+    
   }
 
   @include device-Screen("desktop") {
@@ -132,6 +150,12 @@ main {
 
         p {
           margin: 0px 15px;
+        }
+      }
+      @include device-Screen("phone"){
+        img{
+          height: 40px;
+          width: 45px;
         }
       }
     }
@@ -226,6 +250,17 @@ main {
   p {
     text-align: center;
     margin-bottom: 10px;
+  }
+}
+@include device-Screen("phone"){
+  .text{
+    padding: 20px 50px 20px 50px ;
+    margin: 0px;
+    font-size: 15px;
+
+    p{
+      text-align: justify;
+    }
   }
 }
 

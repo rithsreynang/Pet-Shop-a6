@@ -32,7 +32,6 @@ footer {
             }
 
             @include device-Screen("tablet") {
-
                 img,
                 h5 {
                     display: none;

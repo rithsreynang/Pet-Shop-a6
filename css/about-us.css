@@ -31,7 +31,7 @@ nav .nav-right img {
     width: 120px;
   }
 }
-@media screen and (max-width: ) {
+@media screen and (max-width: 820px) {
   nav .nav-right img {
     margin-top: -20px;
     height: 115px;
@@ -63,7 +63,7 @@ nav .nav-center h4 {
     font-size: 17px;
   }
 }
-@media screen and (max-width: ) {
+@media screen and (max-width: 820px) {
   nav .nav-center h4 {
     font-size: 15px;
   }
@@ -233,7 +233,7 @@ nav .nav-left .material-icons {
     padding: 3px;
   }
 }
-@media screen and (max-width: ) {
+@media screen and (max-width: 820px) {
   .shopping .card button p,
   .newarrival .card button p,
   .shopebypets .card button p,
@@ -263,7 +263,7 @@ nav .nav-left .material-icons {
     font-size: 16px;
   }
 }
-@media screen and (max-width: ) {
+@media screen and (max-width: 820px) {
   .shopping .card button i,
   .newarrival .card button i,
   .shopebypets .card button i,
@@ -620,7 +620,6 @@ main .mission {
   border: 1px solid rgb(21, 160, 189);
   border-radius: 20px;
   margin: 30px;
-  margin-top: 180px;
 }
 main .mission .mission-left {
   flex: 1;
@@ -642,6 +641,25 @@ main .mission .mission-right h2 {
 @media screen and (max-width: 820px) {
   main .mission .mission-right {
     font-size: 15px;
+  }
+}
+@media screen and (max-width: 600px) {
+  main .mission {
+    margin-top: 50px;
+  }
+  main .mission .mission-right {
+    font-size: 12px;
+    padding-right: 15px;
+  }
+  main .mission .mission-right h2 {
+    padding-bottom: 15px;
+  }
+  main .mission .mission-left {
+    margin-left: 15px;
+  }
+  main .mission .mission-left img {
+    width: 200px;
+    height: 200px;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -674,6 +692,12 @@ main .value .pet p {
   }
   main .value .pet p {
     margin: 0px 15px;
+  }
+}
+@media screen and (max-width: 600px) {
+  main .value .pet img {
+    height: 40px;
+    width: 45px;
   }
 }
 main .value .pet:hover {
@@ -740,6 +764,16 @@ main .value .pet:hover {
   margin-bottom: 10px;
 }
 
+@media screen and (max-width: 600px) {
+  .text {
+    padding: 20px 50px 20px 50px;
+    margin: 0px;
+    font-size: 15px;
+  }
+  .text p {
+    text-align: justify;
+  }
+}
 .background {
   display: flex;
   justify-content: space-evenly;
