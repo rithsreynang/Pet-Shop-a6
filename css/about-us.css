@@ -93,6 +93,7 @@ nav .nav-left {
 }
 nav .nav-left .material-icons {
   font-size: 34px;
+  color: black;
 }
 @media screen and (max-width: 1024px) {
   nav .nav-left .material-icons {
@@ -718,6 +719,15 @@ header .bg h1 {
     padding-top: 150px;
   }
 }
+@media screen and (max-width: 820px) {
+  header {
+    height: 80vh;
+  }
+  header .bg {
+    font-size: 15px;
+    height: 45vh;
+  }
+}
 @media screen and (max-width: 600px) {
   header {
     height: 75vh;
@@ -729,6 +739,7 @@ main .mission {
   text-align: justify;
   height: auto;
   padding: 20px;
+  margin-top: 80px;
   border: 1px solid rgb(21, 160, 189);
   border-radius: 20px;
   margin: 30px;

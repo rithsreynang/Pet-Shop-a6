@@ -93,6 +93,7 @@ nav .nav-left {
 }
 nav .nav-left .material-icons {
   font-size: 34px;
+  color: black;
 }
 @media screen and (max-width: 1024px) {
   nav .nav-left .material-icons {
