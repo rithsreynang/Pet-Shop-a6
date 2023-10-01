@@ -1,0 +1,79 @@
+body{
+    background-image: url(../images/shop.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+form{
+    background: rgba(248, 240, 240, 0.808);
+    color: rgb(10, 83, 99);
+    width: 40%;
+    height: 85vh;
+    text-align: center;
+    padding: 20px;
+    margin-left: 350px;
+    margin-top: 50px;
+    border-radius: 20px;
+
+    .user-name{
+        font-size: 18px;
+        display: grid;
+        text-align: start;
+        label{
+            margin-left: 50px;
+        }
+        .user-firstname,
+        .user-lastname{
+            display: grid;
+            #firstname,
+            #lastname{
+                outline: 0;
+                padding: 7px;
+                margin: 5px;
+                width: 80%;
+                margin-left: 40px;
+                border-radius: 5px;
+                border: none;
+            }
+        }
+        
+    }
+    .user-email,
+    .user-password{
+        font-size: 18px;
+        display: grid;
+        text-align: start;
+        label{
+            margin-left: 50px;
+        }
+        #email,
+        #password{
+            outline: 0;
+            padding: 7px;
+            margin: 5px;
+            width: 80%;
+            margin-left: 40px;
+            border-radius: 5px;
+            border: none;
+        }
+
+    }
+    .user-more-infos{
+        font-size: 18px;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        #chose,
+        #type{
+            margin: 10px;
+        }
+    }
+    #submit{
+        padding: 5px;
+        width: 40%;
+        background: rgb(21, 160, 189);
+        color: white;
+        font-size: 17px;
+        border-radius: 10px;
+        border: none;
+    }
+}
