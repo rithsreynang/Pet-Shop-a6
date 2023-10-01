@@ -33,6 +33,7 @@
     overflow: hidden;
     margin-top: 70px;
     margin-bottom: -40px;
+
 }
 
 @include device-Screen("phone") {
@@ -51,6 +52,8 @@
     background-position: center;
     background-size: cover;
     background-color: $white-color;
+
+
     color: $white-color;
     font-size: 36px;
     @include display-column;

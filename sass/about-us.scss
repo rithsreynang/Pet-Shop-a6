@@ -13,7 +13,7 @@ header {
     padding: 30px;
     width: 45%;
     text-align: justify;
-    color: white;
+    color: $white-color;
     font-size: 18px;
     margin-left: 80px;
     border-radius: 20px;
@@ -105,7 +105,7 @@ main {
 
   .mission:hover {
     background: rgb(21, 160, 189);
-    color: white;
+    color: $white-color;
   }
 
 
@@ -193,7 +193,7 @@ main {
       }
 
       p {
-        font-size: 13px;
+        font-size: $fond-size;
       }
     }
   }
@@ -228,6 +228,4 @@ main {
       height: 160px;
     }
   }
-
-  
 }

@@ -5,7 +5,7 @@
   text-decoration: none;
   list-style: none;
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 nav {
@@ -228,7 +228,7 @@ nav .nav-left .material-icons {
 .newproducdselling .card label {
   margin: 40px;
   font-weight: bold;
-  font-size: "fonds";
+  font-size: 18px;
 }
 @media screen and (max-width: 600px) {
   .shopping .card label,
@@ -342,8 +342,13 @@ nav .nav-left .material-icons {
   .shopebypets .card button,
   .newproducdselling .card button {
     width: 80%;
-    margin-left: 20px;
-    margin-bottom: -5px;
+  }
+  .shopping .card button margin,
+  .newarrival .card button margin,
+  .shopebypets .card button margin,
+  .newproducdselling .card button margin {
+    left: 20px;
+    bottom: -5px;
   }
 }
 @media screen and (max-width: 820px) {
@@ -385,11 +390,11 @@ nav .nav-left .material-icons {
 .shopebypets .card .listnumber-card,
 .newproducdselling .card .listnumber-card {
   display: flex;
-  font-weight: bold;
   justify-content: space-around;
   flex-direction: row-reverse;
   margin-top: 10px;
   font-size: 18px;
+  font-weight: bold;
 }
 .shopping .card .listnumber-card span,
 .newarrival .card .listnumber-card span,
@@ -643,9 +648,9 @@ footer .footer_top .contact-us .page:hover {
 }
 @media screen and (max-width: 820px) {
   footer .footer_top {
-    margin-left: -450px;
     font-size: 18px;
     margin-top: -30px;
+    margin-left: -450px;
   }
 }
 @media screen and (max-width: 600px) {
@@ -786,7 +791,7 @@ body {
 .newproducdselling .card label {
   margin: 40px;
   font-weight: bold;
-  font-size: "fonds";
+  font-size: 18px;
 }
 @media screen and (max-width: 600px) {
   .shopping .card label,
@@ -900,8 +905,13 @@ body {
   .shopebypets .card button,
   .newproducdselling .card button {
     width: 80%;
-    margin-left: 20px;
-    margin-bottom: -5px;
+  }
+  .shopping .card button margin,
+  .newarrival .card button margin,
+  .shopebypets .card button margin,
+  .newproducdselling .card button margin {
+    left: 20px;
+    bottom: -5px;
   }
 }
 @media screen and (max-width: 820px) {
@@ -943,11 +953,11 @@ body {
 .shopebypets .card .listnumber-card,
 .newproducdselling .card .listnumber-card {
   display: flex;
-  font-weight: bold;
   justify-content: space-around;
   flex-direction: row-reverse;
   margin-top: 10px;
   font-size: 18px;
+  font-weight: bold;
 }
 .shopping .card .listnumber-card span,
 .newarrival .card .listnumber-card span,

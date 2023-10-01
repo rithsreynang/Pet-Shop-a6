@@ -3,8 +3,7 @@
 footer {
     background: rgba(0, 128, 128, 0.129);
     margin-top: 100px;
-    display: flex;
-    flex-direction: column;
+    @include display-column;
 
     .footer_top {
         display: flex;
@@ -18,7 +17,6 @@ footer {
             img {
                 margin-top: -10px;
                 margin-left: 80px;
-
             }
 
             h5 {
@@ -53,7 +51,7 @@ footer {
 
             ul {
                 font-weight: bold;
-                font-size: 13px;
+                font-size: $fond-size;
 
                 li {
                     margin: 5px;
@@ -65,15 +63,16 @@ footer {
                         margin: 2px;
                     }
                 }
-                @include device-Screen("phone"){
-                    li{
+
+                @include device-Screen("phone") {
+                    li {
                         font-size: 13.5px;
                         margin: 2px;
                     }
                 }
 
             }
-            
+
 
             li:hover {
                 color: $teal-color;
@@ -99,8 +98,9 @@ footer {
                 color: $teal-color;
             }
         }
-        @include device-Screen("phone"){
-            .contact-us{
+
+        @include device-Screen("phone") {
+            .contact-us {
                 margin-right: 20px;
             }
         }
@@ -108,13 +108,14 @@ footer {
 
     @include device-Screen("tablet") {
         .footer_top {
-            margin-left: -450px;
             font-size: 18px;
             margin-top: -30px;
+            margin-left: -450px;
         }
     }
-    @include device-Screen("phone"){
-        .footer_top{
+
+    @include device-Screen("phone") {
+        .footer_top {
             font-size: 16.5px;
             margin-left: -370px;
         }
