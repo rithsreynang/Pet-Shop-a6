@@ -67,7 +67,7 @@ nav {
         }
         
 
-        @include device-Screen("tablate") {
+        @include device-Screen("tablet") {
             h4 {
                 font-size: 15px;
             }

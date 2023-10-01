@@ -26,7 +26,7 @@ footer {
                 }
             }
 
-            @include device-Screen("tablate") {
+            @include device-Screen("tablet") {
                 img {
                     margin-top: 10px;
                     margin-left: 40px;
@@ -50,7 +50,7 @@ footer {
             }
         }
 
-        @include device-Screen("tablate") {
+        @include device-Screen("tablet") {
             .logo_shop {
                 display: none;
             }
@@ -97,7 +97,7 @@ footer {
         }
     }
 
-    @include device-Screen("tablate") {
+    @include device-Screen("tablet") {
         .footer_top {
             margin-left: 82px;
         }
