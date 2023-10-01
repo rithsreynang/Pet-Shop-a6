@@ -233,7 +233,7 @@ nav .nav-left .material-icons {
     padding: 3px;
   }
 }
-@media screen and (max-width: ) {
+@media screen and (max-width: 820px) {
   .shopping .card button p,
   .newarrival .card button p,
   .shopebypets .card button p,
@@ -263,7 +263,7 @@ nav .nav-left .material-icons {
     font-size: 16px;
   }
 }
-@media screen and (max-width: ) {
+@media screen and (max-width: 820px) {
   .shopping .card button i,
   .newarrival .card button i,
   .shopebypets .card button i,
@@ -695,7 +695,7 @@ body {
     padding: 3px;
   }
 }
-@media screen and (max-width: ) {
+@media screen and (max-width: 820px) {
   .shopping .card button p,
   .newarrival .card button p,
   .shopebypets .card button p,
@@ -725,7 +725,7 @@ body {
     font-size: 16px;
   }
 }
-@media screen and (max-width: ) {
+@media screen and (max-width: 820px) {
   .shopping .card button i,
   .newarrival .card button i,
   .shopebypets .card button i,
