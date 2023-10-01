@@ -191,7 +191,7 @@ nav .nav-left .material-icons {
   display: flex;
   padding-left: 10px;
   gap: 20px;
-  font-size: 18px;
+  font-size: "fonds";
   margin: 10px;
 }
 .shopping .card label,
@@ -200,7 +200,7 @@ nav .nav-left .material-icons {
 .newproducdselling .card label {
   margin: 40px;
   font-weight: bold;
-  font-size: 18px;
+  font-size: "fonds";
 }
 .shopping .card button,
 .newarrival .card button,
@@ -391,7 +391,7 @@ nav .nav-left .material-icons {
   color: white;
   font-size: 36px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
 }
 
@@ -403,7 +403,7 @@ nav .nav-left .material-icons {
   height: 90vh;
 }
 .content-slide h1 {
-  margin-left: 130px;
+  margin-left: 100px;
   margin-top: 100px;
   font-size: 80px;
 }
@@ -421,8 +421,9 @@ nav .nav-left .material-icons {
 }
 @media screen and (max-width: 600px) {
   .content-slide h1 {
-    font-size: 40px;
-    margin-top: 130px;
+    margin-top: 50px;
+    font-size: 35px;
+    margin-left: 50px;
   }
 }
 .content-slide p {
@@ -445,8 +446,8 @@ nav .nav-left .material-icons {
 }
 @media screen and (max-width: 600px) {
   .content-slide p {
-    font-size: 20px;
-    margin-left: 40px;
+    font-size: 16px;
+    margin-left: 15px;
     margin-bottom: 80%;
   }
 }
@@ -584,7 +585,7 @@ footer .footer_top .contact-us .page:hover {
   color: rgb(0, 0, 0);
 }
 .footer-down a:hover {
-  color: rgb(255, 255, 255);
+  color: white;
   text-decoration: underline;
 }
 .footer-down a:hover a {
