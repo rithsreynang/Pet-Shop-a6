@@ -1,3 +1,5 @@
+@import"../mixins/mixin";
+
 footer {
     background: rgba(0, 128, 128, 0.129);
     margin-top: 100px;
@@ -32,6 +34,7 @@ footer {
             }
 
             @include device-Screen("tablet") {
+
                 img,
                 h5 {
                     display: none;
@@ -39,7 +42,7 @@ footer {
             }
 
             h5:hover {
-                color: teal;
+                color: $teal-color;
             }
         }
 
@@ -55,8 +58,9 @@ footer {
                 li {
                     margin: 5px;
                 }
+
                 @include device-Screen("tablet") {
-                    li{
+                    li {
                         font-size: 15px;
                         margin: 2px;
                     }
@@ -72,7 +76,7 @@ footer {
             
 
             li:hover {
-                color: teal;
+                color: $teal-color;
                 text-decoration: underline;
             }
         }
@@ -92,7 +96,7 @@ footer {
             .call:hover,
             .email:hover,
             .page:hover {
-                color: teal;
+                color: $teal-color;
             }
         }
         @include device-Screen("phone"){
@@ -101,12 +105,13 @@ footer {
             }
         }
     }
+
     @include device-Screen("tablet") {
-       .footer_top{
+        .footer_top {
             margin-left: -450px;
             font-size: 18px;
             margin-top: -30px;
-       }
+        }
     }
     @include device-Screen("phone"){
         .footer_top{
@@ -118,7 +123,7 @@ footer {
 }
 
 .footer-down {
-    background: teal;
+    background: $teal-color;
     height: 10vh;
     display: flex;
     justify-content: center;
@@ -130,11 +135,11 @@ footer {
     }
 
     a:hover {
-        color: rgb(255, 255, 255);
+        color: $white-color;
         text-decoration: underline;
 
         a {
-            color: white;
+            color: $white-color;
         }
     }
 }

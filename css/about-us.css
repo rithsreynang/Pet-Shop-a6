@@ -220,7 +220,7 @@ nav .nav-left .material-icons {
   display: flex;
   padding-left: 10px;
   gap: 20px;
-  font-size: 18px;
+  font-size: "fonds";
   margin: 10px;
 }
 .shopping .card label,
@@ -229,7 +229,7 @@ nav .nav-left .material-icons {
 .newproducdselling .card label {
   margin: 40px;
   font-weight: bold;
-  font-size: 18px;
+  font-size: "fonds";
 }
 @media screen and (max-width: 600px) {
   .shopping .card label,
@@ -456,7 +456,7 @@ nav .nav-left .material-icons {
   color: white;
   font-size: 36px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
 }
 
@@ -468,7 +468,7 @@ nav .nav-left .material-icons {
   height: 90vh;
 }
 .content-slide h1 {
-  margin-left: 130px;
+  margin-left: 100px;
   margin-top: 100px;
   font-size: 80px;
 }
@@ -486,8 +486,9 @@ nav .nav-left .material-icons {
 }
 @media screen and (max-width: 600px) {
   .content-slide h1 {
-    font-size: 40px;
-    margin-top: 130px;
+    margin-top: 50px;
+    font-size: 35px;
+    margin-left: 50px;
   }
 }
 .content-slide p {
@@ -510,8 +511,8 @@ nav .nav-left .material-icons {
 }
 @media screen and (max-width: 600px) {
   .content-slide p {
-    font-size: 20px;
-    margin-left: 40px;
+    font-size: 16px;
+    margin-left: 15px;
     margin-bottom: 80%;
   }
 }
@@ -667,7 +668,7 @@ footer .footer_top .contact-us .page:hover {
   color: rgb(0, 0, 0);
 }
 .footer-down a:hover {
-  color: rgb(255, 255, 255);
+  color: white;
   text-decoration: underline;
 }
 .footer-down a:hover a {
@@ -694,6 +695,12 @@ header .bg {
 header .bg h1 {
   text-align: center;
   margin-bottom: 20px;
+}
+@media screen and (max-width: 820px) {
+  header .bg {
+    font-size: 13px;
+    height: 45vh;
+  }
 }
 @media screen and (max-width: 600px) {
   header .bg {
@@ -740,6 +747,17 @@ main .mission .mission-left img {
   border-radius: 10px;
   margin-top: 10px;
 }
+@media screen and (max-width: 600px) {
+  main .mission .mission-left img {
+    height: 200px;
+    width: 200px;
+  }
+}
+@media screen and (max-width: 600px) {
+  main .mission .mission-left {
+    margin-left: 0px;
+  }
+}
 main .mission .mission-right {
   flex: 2;
   padding: 10px;
@@ -751,7 +769,13 @@ main .mission .mission-right h2 {
 }
 @media screen and (max-width: 820px) {
   main .mission .mission-right {
-    font-size: 15px;
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 600px) {
+  main .mission .mission-right {
+    font-size: 12px;
+    padding-right: 0px;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -774,22 +798,37 @@ main .value {
   justify-content: center;
 }
 main .value .pet p {
-  margin: 0px 30px;
+  margin: 0px 20px;
+}
+@media screen and (max-width: 820px) {
+  main .value .pet p {
+    margin: 0px 15px;
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 600px) {
+  main .value .pet p {
+    margin: 0px 10px;
+    font-size: 10px;
+  }
 }
 @media screen and (max-width: 1024px) {
   main .value .pet img {
-    height: 60px;
-    width: 65px;
+    height: 50px;
+    width: 55px;
     margin-left: -20px;
   }
-  main .value .pet p {
-    margin: 0px 15px;
+}
+@media screen and (max-width: 820px) {
+  main .value .pet img {
+    height: 40px;
+    width: 45px;
   }
 }
 @media screen and (max-width: 600px) {
   main .value .pet img {
-    height: 40px;
-    width: 45px;
+    height: 30px;
+    width: 35px;
   }
 }
 main .value .pet:hover {
@@ -816,10 +855,6 @@ main .value .pet:hover {
   border-radius: 150px;
   margin: 60px 0px 30px 0px;
 }
-.team .card-i p {
-  margin: 10px 20px 20px 20px;
-  text-align: justify;
-}
 @media screen and (max-width: 1024px) {
   .team .card-i img {
     height: 200px;
@@ -828,10 +863,29 @@ main .value .pet:hover {
 }
 @media screen and (max-width: 820px) {
   .team .card-i img {
-    margin-top: 30px;
+    margin-top: 20px;
   }
+}
+@media screen and (max-width: 600px) {
+  .team .card-i img {
+    height: 120px;
+    width: 120px;
+    margin: 20px 0px 10px 0px;
+  }
+}
+.team .card-i p {
+  margin: 10px 20px 20px 20px;
+  text-align: justify;
+}
+@media screen and (max-width: 600px) {
   .team .card-i p {
-    font-size: 13px;
+    margin: 10px;
+    font-size: 8px;
+  }
+}
+@media screen and (max-width: 820px) {
+  .team .card-i {
+    font-size: 12px;
   }
 }
 
@@ -844,7 +898,18 @@ main .value .pet:hover {
   text-align: center;
   margin-bottom: 10px;
 }
+@media screen and (max-width: 600px) {
+  .text p {
+    text-align: justify;
+    font-size: 13px;
+  }
+}
 
+@media screen and (max-width: 600px) {
+  .text {
+    padding: 20px 30px 20px 30px;
+  }
+}
 .background {
   display: flex;
   justify-content: space-evenly;
@@ -861,5 +926,11 @@ main .value .pet:hover {
   .background img {
     width: 150px;
     height: 160px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .background img {
+    width: 110px;
+    height: 110px;
   }
 }/*# sourceMappingURL=about-us.css.map */
